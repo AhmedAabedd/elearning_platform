@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Inherit the course form view to add price field -->
+    <record id="view_product_form_inherit" model="ir.ui.view">
+        <field name="name">product.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='type']" position="after">
+                <field name="is_course_access" invisible="type != 'service'"/>
+            </xpath>
+            
+        </field>
+    </record>
+
+</odoo>

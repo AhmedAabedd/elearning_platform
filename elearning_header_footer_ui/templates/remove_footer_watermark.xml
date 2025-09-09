@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="brand_promotion" inherit_id="web.brand_promotion" name="Remove Brand Promotion">
+        <xpath expr="." position="replace">
+            
+            <div class="o_brand_promotion"/>
+        </xpath>
+    </template>
+
+</odoo>

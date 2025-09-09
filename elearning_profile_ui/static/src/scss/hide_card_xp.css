@@ -1,0 +1,10 @@
+/* Hide the entire sidebar column */
+.col-lg-3.order-lg-2 {
+    display: none !important;
+}
+
+/* Optional: Make the main content take full width */
+.col-lg-9.order-lg-1 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}

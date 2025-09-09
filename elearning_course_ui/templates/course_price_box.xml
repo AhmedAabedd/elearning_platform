@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="course_sidebar_custom" inherit_id="website_slides.course_sidebar" name="Course Sidebar with Price">
+        <xpath expr="//div[hasclass('o_wslides_sidebar_top')]" position="before">
+            <div t-if="channel.display_price > 0 and not channel.is_member" class="o_wslides_course_price mb-3 p-3 bg-light rounded">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 text-primary">
+                        <i class="fa fa-tag me-2"/>
+                        Prix
+                    </h5>
+                    <span class="h4 mb-0 text-success">
+                        DT <t t-esc="'{:,.0f}'.format(channel.display_price)"/>
+                    </span>
+                </div>
+                <small t-if="request.env.user.id != request.website.user_id.id" class="text-muted d-block mt-1">
+                    Click Request Access button to enroll or
+                    <a t-att-href="'/contactus'">contact us</a>.
+                </small>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

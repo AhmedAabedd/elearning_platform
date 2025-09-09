@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <template id="course_join_request_access" inherit_id="website_slides.course_join">
+        <xpath expr="//div[div[@class='o_wslides_enroll_msg']]" position="replace">
+            <t t-if="is_public_user">
+                <!-- Show a simple warning with text only -->
+                <div class="alert alert-warning my-0 p-2">
+                    <strong>Private Course</strong><br/>
+                    <span>Please <a t-att-href="'/web/login'">sign in</a> to request access</span>
+                </div>
+            </t>
+            <t t-else="">
+                <!-- Show your custom Request Access for logged-in users -->
+                <div t-attf-class="alert my-0 bg-100 p-2 #{'o_wslides_js_channel_enroll' if not is_public_user and channel.user_id else ''}"
+                    t-att-data-channel-id="channel.id">
+                    <span>Request Access</span>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

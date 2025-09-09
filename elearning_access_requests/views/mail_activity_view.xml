@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_course_access_activities_tree" model="ir.ui.view">
+        <field name="name">mail.activity.tree.course.access</field>
+        <field name="model">mail.activity</field>
+        <field name="arch" type="xml">
+            <list string="Course Access Requests" 
+                decoration-danger="date_deadline &lt; current_date and active == True" 
+                decoration-warning="date_deadline == current_date and active == True" 
+                decoration-success="date_deadline &gt; current_date and active == True" 
+                default_order="date_deadline" 
+                create="false">
+                
+                <field name="res_name"/>
+                <field name="activity_type_id"/>
+                <field name="request_partner_id" string="Requested By"/>
+                <field name="user_id" widget="many2one_avatar_user"/>
+                <field name="summary"/>
+                <field name="date_deadline" widget="remaining_days"/>
+                <field name="date_done" string="Done Date" optional="hide"/>
+                <field name="partner_sale_done" optional="hide"/>
+                
+                <button name="action_grant_course_access" type="object" string="Grant Access" icon="fa-check" class="btn-outline-success" confirm="Are you sure you want to grant access to this course ? This action will give the user full access to all course content."/>
+                <button name="action_refuse_course_access" type="object" string="Refuse" icon="fa-times" class="text-danger" invisible="active == False" confirm="Are you sure you want to refuse access ? This action cannot be undone and the user will need to request access again."/>
+                <button name="action_snooze" class="text-warning" type="object" string="Snooze" icon="fa-bell-slash" invisible="active == False"/>
+                <button name="action_create_sale_order" type="object" string="Create Order" icon="fa-pencil" invisible="partner_sale_done != 'no'"/>
+        
+            </list>
+        </field>
+    </record>
+
+</odoo>

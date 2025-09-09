@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="user_profile_header_custom" inherit_id="website_profile.user_profile_header" name="Custom Profile Header Color">
+        <xpath expr="//div[contains(@class,'o_wprofile_header')]" position="attributes">
+            <!-- Remove default gradient -->
+            <attribute name="class">o_wprofile_header text-white</attribute>
+            <!-- Add custom background color -->
+            <attribute name="style">background-color: #007bff;</attribute>
+        </xpath>
+    </template>
+
+    <!-- Remove Users link -->
+    <template id="remove_users_link" inherit_id="website_profile.user_profile_sub_nav" name="Remove Users link">
+        <xpath expr="//nav" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+    </template>
+
+    <template id="remove_user_profile_search" inherit_id="website_profile.user_profile_sub_nav">
+        <xpath expr="//div[@class='col d-none d-md-flex flex-row align-items-center justify-content-end']" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+    </template>
+
+    <!-- Remove Current Rank / Next Rank / XP -->
+    <template id="user_profile_sidebar_custom" inherit_id="website_profile.user_profile_content" name="Custom Sidebar Without Ranks">
+        <xpath expr="//div[contains(@class,'o_wprofile_sidebar_top')]" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+        <xpath expr="//t[@t-call='website_profile.profile_next_rank_card']" position="replace"/>
+        <xpath expr="//small[contains(text(),'Next rank:')]" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+        
+        <!-- Remove badges row from the sidebar table -->
+        <xpath expr="//table[@id='o_wprofile_sidebar_table']/tbody/tr[th/small[text()='Badges']]" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+    </template>
+
+    <!-- Remove the Badges section -->
+    <template id="remove_badges_section" inherit_id="website_profile.user_profile_content" name="Remove Bottom Badges">
+        <xpath expr="//div[@id='profile_about_badge']" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+    </template>
+
+</odoo>

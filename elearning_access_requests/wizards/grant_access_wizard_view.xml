@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_grant_access_wizard_form" model="ir.ui.view">
+        <field name="name">grant.access.wizard.form</field>
+        <field name="model">grant.access.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Access Warning">
+                <div invisible="sale_problem == 'no_confirm'">
+                    <p>User has no sale order containing the access for this course !</p>
+                </div>
+                <div invisible="sale_problem == 'no'">
+                    <p>User has no confirmed sale order containing the access for this course !</p>
+                </div>
+                <footer>
+                    <button name="action_create_sale_order" string="Create Sale Order" type="object" class="btn-primary" invisible="sale_problem == 'no_confirm'"/>
+                    <button name="action_confirm_grant_access" string="Grant Access Anyway" type="object" class="btn-outline-success"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_grant_access_wizard" model="ir.actions.act_window">
+        <field name="name">Grant Access Warning</field>
+        <field name="res_model">grant.access.wizard</field>
+    </record>
+
+</odoo>

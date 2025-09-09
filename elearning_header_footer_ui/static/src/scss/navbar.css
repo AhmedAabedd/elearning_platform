@@ -1,0 +1,48 @@
+/* NAVBAR HOVER */
+/* Increase space between navbar items */
+.navbar-nav > .nav-item {
+    margin: 0 15px !important;
+}
+
+/* NAVBAR HOVER - Only target main menu links, exclude specific sections */
+#o_main_nav .navbar-nav > .nav-item > .nav-link {
+    position: relative;
+    padding: 0.8rem 0 !important;
+    color: #4b5563 !important;
+    transition: color 0.3s ease !important;
+}
+
+#o_main_nav .navbar-nav > .nav-item > .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3A33D8;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+#o_main_nav .navbar-nav > .nav-item > .nav-link:hover,
+#o_main_nav .navbar-nav > .nav-item > .nav-link.active {
+    color: #3A33D8 !important; /* Electric Blue from button */
+}
+
+#o_main_nav .navbar-nav > .nav-item > .nav-link:hover::after,
+#o_main_nav .navbar-nav > .nav-item > .nav-link.active::after {
+    width: 75%;
+}
+
+/* Gradient button with simple hover */
+a.btn_cta.btn-primary[href="/contactus"] {
+    background: linear-gradient(135deg, #4A00E0 0%, #00BFFF 100%) !important;
+    border: none !important;
+    color: white !important;
+    transition: background 0.3s ease-in-out !important;
+}
+
+a.btn_cta.btn-primary[href="/contactus"]:hover {
+    background: linear-gradient(135deg, #3A00B0 0%, #0090CF 100%) !important;
+}

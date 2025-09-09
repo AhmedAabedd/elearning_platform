@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <template id="user_dropdown_profile" inherit_id="portal.user_dropdown" name="Portal User Dropdown: Add My Profile">
+        <xpath expr="//div[@id='o_logout_divider']" position="before">
+            <a t-att-href="'/profile/user/%s' % user_id.id" role="menuitem" class="dropdown-item ps-3">
+                <i class="fa fa-fw fa-user-circle me-1 small text-primary text-primary-emphasis"/> My Profile
+            </a>
+        </xpath>
+    </template>
+    
+</odoo>
