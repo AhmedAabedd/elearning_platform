@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    
+    <!-- Inherit and modify the vertical header template -->
+    <template id="template_header_vertical_modified" inherit_id="website.template_header_vertical" name="Template Header Vertical Modified" active="True">
+        <!-- Remove search from its original position -->
+        <xpath expr="//ul[hasclass('navbar-nav')][1]//t[@t-call='website.placeholder_header_search_box']" position="replace"/>
+        
+        <!-- Add search next to the user dropdown -->
+        <xpath expr="//ul[hasclass('navbar-nav')][2]//t[@t-call='portal.placeholder_user_sign_in']" position="before">
+            <!-- Search bar - MOVED HERE -->
+            <li class="nav-item d-flex align-items-center ms-2">
+                <t t-call="website.placeholder_header_search_box" t-nocache="The searchbox should not cache previous searches.">
+                    <t t-set="_layout" t-value="'modal'"/>
+                    <t t-set="_input_classes" t-value="'border border-end-0 p-3'"/>
+                    <t t-set="_submit_classes" t-value="'border border-start-0 px-4 bg-o-color-4'"/>
+                    <t t-set="_button_classes" t-value="'o_navlink_background text-reset'"/>
+                </t>
+            </li>
+        </xpath>
+    </template>
+
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="custom_homepage" name="Custom Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[hasclass('oe_structure')][1]" position="replace">
+            
+            
+
+        </xpath>
+    </template>
+</odoo>

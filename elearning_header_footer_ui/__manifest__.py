@@ -11,7 +11,9 @@
         "website_slides"
     ],
     "data": [
+        #"templates/home_page.xml",
         "templates/remove_footer_watermark.xml",
+        "templates/navbar.xml",
     ],
     'assets': {
         'web.assets_frontend': [
