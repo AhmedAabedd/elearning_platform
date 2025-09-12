@@ -56,7 +56,7 @@ class SaleOrderLine(models.Model):
     @api.constrains('product_uom_qty')
     def check_product_uom_qty(self):
         for line in self:
-            if line.product_template_id.type == 'service' and line.product_template_id.type.is_course_access:
+            if line.product_template_id.type == 'service' and line.product_template_id.is_course_access:
                 if line.product_uom_qty != 1:
                     raise UserError(
                         "Course access products must have a quantity of 1. "
