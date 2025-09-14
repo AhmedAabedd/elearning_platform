@@ -11,7 +11,8 @@
         "website_slides",
     ],
     "data": [
-        'views/home.xml'
+        'views/home.xml',
+        'views/home_templates.xml'
     ],
     'assets': {
         'web.assets_frontend': [

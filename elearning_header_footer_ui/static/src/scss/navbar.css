@@ -50,8 +50,6 @@
 
 /* " CONFIGURING DROP DOWN, SEARCH AND SIGN IN BUTTONS " */
 
-    /* " CONFIGURING DROP DOWN, SEARCH AND SIGN IN BUTTONS " */
-
     /* Orange background for dropdown button */
     #o_main_nav .o_navlink_background.btn.text-reset,
     #o_main_nav .o_navlink_background.btn.border-0.text-reset {
@@ -62,6 +60,7 @@
     #o_main_nav .o_navlink_background.text-reset[type="submit"],
     #o_main_nav .o_navlink_background.text-reset.btn {
         background-color: white !important;
+        margin-right: 5px;
     }
 
     /* Hover effects for dropdown button */
