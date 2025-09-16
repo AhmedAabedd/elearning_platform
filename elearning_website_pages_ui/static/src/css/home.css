@@ -507,6 +507,58 @@
 
 
 /*############## SECTION 7 : HOW TO BECOME A TEACHER ################*/
+    /* Target small and medium screens */
+    @media (max-width: 991.98px) {
+        /* Section How to Become a Teacher */
+        .s_color_blocks_2.o_colored_level {
+            background-color: #F6F4FF !important;
+        }
+    }
+
+    /* === Styling Buttons === */
+
+    /* Initial style */
+    a[href="/custom"].btn-fill-custom.bg-o-color-1,
+    a[href="/jobs"].btn-fill-custom.bg-o-color-1 {
+        background-color: #7B3FF2 !important;
+        color: white !important;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: color 0.5s ease !important;
+        border: none !important;
+    }
+
+    /* Pseudo-element for curved fill effect */
+    a[href="/custom"].btn-fill-custom.bg-o-color-1::before,
+    a[href="/jobs"].btn-fill-custom.bg-o-color-1::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        width: 120%;
+        height: 250%;
+        background: #111827; /* fill color */
+        transition: top 0.5s ease;
+        z-index: -1;
+        border-radius: 50% 50% 30% 30%;
+    }
+
+    /* Reset Odoo hover */
+    a[href="/custom"].btn-fill-custom.bg-o-color-1:hover,
+    a[href="/jobs"].btn-fill-custom.bg-o-color-1:hover {
+        filter: none !important;
+    }
+
+    /* Hover animation */
+    a[href="/custom"].btn-fill-custom.bg-o-color-1:hover::before,
+    a[href="/jobs"].btn-fill-custom.bg-o-color-1:hover::before {
+        top: -50%;
+    }
+
+
+
+/*############## SECTION 7 : HOW TO BECOME A TEACHER ################*/
 
 
 #become-teacher {
@@ -551,55 +603,231 @@
 
 
 
-/* Navbar background */
-.o_wslides_home_nav .navbar {
-    background-color: #f0f4ff !important; /* Customize as needed */
-    padding: 12px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+/* Add lighting/glowing shadow to the CTA content box */
+.s_call_to_action .cta-content {
+    position: relative; /* ensure shadow works correctly */
+    padding: 40px 20px; /* optional: add some inner spacing */
+    border-radius: 20px; /* rounded corners */
+    background-color: #7B3FF2; /* optional: make sure shadow shows on colored background */
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;    /* center horizontally */
+    justify-content: center; /* center vertically inside the div */
+    text-align: center;
+
+
+    /* Glowing/light shadow effect */
+    box-shadow: 
+        0 0 20px rgba(123, 63, 242, 0.4),
+        0 0 40px rgba(123, 63, 242, 0.3),
+        0 0 60px rgba(123, 63, 242, 0.2);
 }
 
-/* Links inside navbar */
-.o_wslides_home_nav .navbar .nav-link {
-    color: #1a1a1a !important;
-    font-weight: 500;
-    transition: color 0.3s ease;
+
+
+    .s_call_to_action .cta-content .btn-fill-custom {
+        margin-top: 25px; /* adds space above the button */
+    }
+
+
+
+
+
+
+  /* Start Now button - initial style */
+    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg {
+        background-color: #111827 !important;
+        color: #fff !important;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: color 0.5s ease !important;
+        border: none !important;
+    }
+
+    /* Pseudo-element for bottom-to-top fill effect */
+    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        width: 120%;
+        height: 250%;
+        background: #fff; /* Fill color */
+        transition: top 0.5s ease;
+        z-index: -1;
+        border-radius: 50% 50% 30% 30%;
+        pointer-events: none;
+    }
+
+    /* Remove default Odoo hover effects */
+    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover {
+        filter: none !important;
+    }
+
+    /* Hover animation */
+    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover::before {
+        top: -50%;
+    }
+
+    /* Text color change on hover */
+    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover {
+        color: #111827 !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cards wrapper */
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* align bottoms */
+  gap: 25px;             /* reduced space between cards */
+  flex-wrap: wrap;
+  position: relative;
 }
 
-/* Hover effect on links */
-.o_wslides_home_nav .navbar .nav-link:hover {
-    color: #4a00e0 !important; /* Highlight color on hover */
+/* Base card */
+.pricing-card {
+  width: 320px;
+  min-height: 400px; /* Set a fixed minimum height */
+  padding: 50px 35px;
+  border-radius: 16px;
+  text-align: center;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #e6eef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* default */
 }
 
-/* Active link */
-.o_wslides_home_nav .navbar .nav-link.active {
-    color: #ffffff !important;          /* Text color for active link */
-    background-color: #4a00e0 !important; /* Background for active link */
-    border-radius: 8px;
-    padding: 6px 12px;
+/* Middle highlighted card */
+.pricing-card.highlight {
+  width: 380px;
+  min-height: 450px; /* Increased height for highlighted card */
+  padding: 65px 45px;
+  background: linear-gradient(180deg,#1e1b3a 0%, #171425 100%);
+  border: 2px solid #7B3FF2;
+  box-shadow: 0 14px 40px rgba(123,63,242,0.55), 0 6px 18px rgba(0,0,0,0.6);
+  z-index: 10; /* higher than others */
+  margin-bottom: 0; /* align bottom with others */
 }
 
-/* Dropdown menu background */
-.o_wslides_home_nav .navbar .dropdown-menu {
-    background-color: #ffffff !important;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* Text inside cards */
+.pricing-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
 
-/* Dropdown items */
-.o_wslides_home_nav .navbar .dropdown-item {
-    color: #1a1a1a !important;
-    padding: 6px 12px;
+.pricing-card .price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fbbf24;
 }
 
-/* Dropdown item hover */
-.o_wslides_home_nav .navbar .dropdown-item:hover {
-    background-color: #4a00e0 !important;
-    color: #ffffff !important;
+.pricing-card .desc {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  flex-grow: 1;
 }
 
-/* Dropdown active item */
-.o_wslides_home_nav .navbar .dropdown-item.active {
-    background-color: #4a00e0 !important;
-    color: #ffffff !important;
+/* Button - Updated with transparent background and solid border */
+.btn-pricing {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 999px;
+  background: #fbbe2410;
+  border: 1px solid #fbbf24;
+  color: #fbbf24;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+/* .btn-pricing:hover {
+  
+} */
+
+/* Pseudo-element for bottom-to-top fill effect */
+.btn-pricing::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -10%;
+  width: 120%;
+  height: 250%;
+  background: #fbbf24; /* Fill color */
+  transition: top 0.5s ease;
+  z-index: -1;
+  border-radius: 50% 50% 30% 30%;
+  pointer-events: none;
+}
+
+/* Hover animation */
+.btn-pricing:hover::before {
+  top: -50%;
+}
+
+/* Hover effect */
+.btn-pricing:hover {
+  color: #111827;
+  text-decoration: none;  /* Remove underline on hover */
+  /* box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3); */
+}
+
+/* Remove ALL hover effects from ALL cards */
+.pricing-card,
+.pricing-card.highlight {
+  transition: none !important;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-card,
+  .pricing-card.highlight {
+    width: 100%;
+    max-width: 480px;
+    min-height: auto; /* Allow natural height on mobile */
+  }
 }
