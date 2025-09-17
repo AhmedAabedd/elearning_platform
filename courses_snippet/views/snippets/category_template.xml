@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="category_template_highlight" name="Category Highlight">
+        <section class="categories_section">
+            <div class="container">
+                <div class="alert alert-info">
+                    <h4>Your Category Highlight Tab snippet will be displayed here...
+                        Please save to view the snippet
+                    </h4>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="category_highlight_snippet" inherit_id="website.snippets" name="Category Highlight Snippet">
+        <xpath expr="//snippets[@id='snippet_groups']" position="inside">
+            <t t-snippet="courses_snippet.category_template_highlight"
+               t-thumbnail="/courses_snippet/static/src/images/snippets/student.png"/>
+        </xpath>
+    </template>
+
+</odoo>

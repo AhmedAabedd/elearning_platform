@@ -1,0 +1,201 @@
+/* Course Cards Styling */
+.card-link-wrapper {
+    text-decoration: none !important;
+    display: block;
+    height: 100%;
+}
+
+.card-modern {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f2ff !important; /* Very soft purple */
+}
+
+.card-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-modern .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    background-color: transparent !important; /* Ensure image background stays normal */
+}
+
+.card-modern .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: white !important; /* Match card background */
+}
+
+.card-modern .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
+}
+
+.card-modern .card-text {
+    color: #718096;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+.card-modern .card-footer {
+    background: white !important;
+    border-top: 1px solid #e9ecef;
+    padding: 0.5rem 1rem !important; /* Reduced padding */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move content to the right */
+    min-height: auto !important; /* Remove minimum height */
+}
+
+.card-modern .card-footer span {
+    font-size: 0.8rem !important; /* Smaller font size */
+    color: #7B3FF2 !important;
+    font-weight: 500;
+}
+
+.card-modern .card-footer i {
+    color: #7B3FF2 !important;
+    margin-right: 5px;
+    font-size: 0.8rem !important; /* Smaller icon size */
+}
+
+/* Ensure equal height for all cards */
+.row.g-4 > .col-md-4 {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.card-link-wrapper {
+    flex: 1;
+}
+
+/* View All Button */
+.view-all-container {
+    margin-top: 2rem;
+}
+
+.btn-view-all {
+    color: #7B3FF2 !important;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-view-all:hover {
+    color: #5a2dbf !important;
+    transform: translateX(3px);
+}
+
+.btn-view-all i {
+    margin-left: 6px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.btn-view-all:hover i {
+    transform: translateX(3px);
+}
+
+/* Section Styling */
+.featured_courses_section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+/* Responsive Design */
+/* Large desktops / laptops */
+@media (max-width: 1200px) {
+    .card-modern .card-body {
+        padding: 1.2rem;
+    }
+    .card-modern .card-title {
+        font-size: 1.1rem;
+    }
+    .card-modern .card-text {
+        font-size: 0.95rem;
+    }
+    .card-modern .card-img-top {
+        height: 160px;
+    }
+}
+
+/* Medium devices like tablets (<= 992px) */
+@media (max-width: 992px) {
+    .row.g-4 > .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .card-modern .card-body {
+        padding: 1rem;
+    }
+    .card-modern .card-title {
+        font-size: 1rem;
+    }
+    .card-modern .card-text {
+        font-size: 0.9rem;
+    }
+    .card-modern .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Small devices like large phones (<= 768px) */
+@media (max-width: 768px) {
+    .row.g-4 > .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .card-modern .card-body {
+        padding: 0.8rem;
+    }
+    .card-modern .card-title {
+        font-size: 0.95rem;
+    }
+    .card-modern .card-text {
+        font-size: 0.85rem;
+    }
+    .card-modern .card-img-top {
+        height: 140px;
+    }
+    .featured_courses_section {
+        padding: 40px 0;
+    }
+}
+
+/* Extra small devices / phones (<= 576px) */
+@media (max-width: 576px) {
+    .card-modern .card-body {
+        padding: 0.6rem;
+    }
+    .card-modern .card-title {
+        font-size: 0.9rem;
+    }
+    .card-modern .card-text {
+        font-size: 0.8rem;
+    }
+    .card-modern .card-img-top {
+        height: 120px;
+    }
+    .card-modern .card-footer span,
+    .card-modern .card-footer i {
+        font-size: 0.7rem !important;
+    }
+    .featured_courses_section {
+        padding: 30px 0;
+    }
+}

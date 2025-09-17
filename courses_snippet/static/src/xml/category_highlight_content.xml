@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Product Category tab content template-->
+<templates xml:space="preserve">
+    <t t-name="courses_snippet.category_data">
+
+        <section class="categories_section">
+            <div class="container">
+                <div class="row g-4">
+                    <t t-foreach="result.courses" t-as="course" t-key="course.id">
+                        <div class="col-md-4">
+                            <a t-att-href="'/slides/' + course.id" class="card-link-wrapper">
+                                <div class="card h-100 shadow-sm card-modern">
+                                    <!-- Course Image -->
+                                    <t t-if="course.image_1920">
+                                        <img t-att-src="'/web/image/slide.channel/' + course.id + '/image_512'"
+                                             class="card-img-top"
+                                             t-att-alt="course.name"
+                                             loading="lazy"/>
+                                    </t>
+                                    <t t-else="">
+                                        <img src="/web/static/img/placeholder.png"
+                                             class="card-img-top"
+                                             t-att-alt="course.name"
+                                             loading="lazy"/>
+                                    </t>
+                                    
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title" t-esc="course.name"/>
+                                        <p class="card-text">
+                                            Brief Description of this course
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Card Footer -->
+                                    <div class="card-footer d-flex align-items-center mt-auto">
+                                        <i class="fa fa-clock me-1"></i>
+                                        <span>
+                                            <t t-if="course.total_slides">
+                                                <!-- Convert total slides to approximate hours (assuming 10min per slide) -->
+                                                <t t-set="total_minutes" t-value="course.total_slides * 10"/>
+                                                <t t-set="hours" t-value="Math.floor(total_minutes / 60)"/>
+                                                <t t-set="minutes" t-value="total_minutes % 60"/>
+                                                <t t-esc="hours + 'h ' + minutes + 'min'"/>
+                                            </t>
+                                            <t t-else="">
+                                                0h 0min
+                                            </t>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </t>
+                    
+                    <!-- Empty state -->
+                    <t t-if="!result.courses or result.courses.length === 0">
+                        <div class="col-12 text-center">
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle mr-2"></i>
+                                No featured courses available at the moment.
+                            </div>
+                        </div>
+                    </t>
+                </div>
+                
+                <!-- View All Button -->
+                <div class="view-all-container text-center mt-4">
+                    <a href="/slides/all" class="btn-view-all">
+                        View All <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </t>
+</templates>

@@ -178,152 +178,26 @@
                         <div class="s_tabs_nav mb-3" data-name="Tab Header" style="--tabs-bg-color: #7B3FF2;">
                             <ul class="nav flex-nowrap overflow-x-auto overflow-y-hidden nav-underline justify-content-center mx-auto" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="nav_tabs_link_1757807252422_29" data-bs-toggle="tab" href="#nav_tabs_content_1757807252422_29" role="tab" aria-controls="nav_tabs_content_1757807252422_29" aria-selected="true" style="--tabs-link-color: #F79F24;">All Categories</a>
+                                    <a class="nav-link active" id="nav_tabs_link_1758148735997_134" data-bs-toggle="tab" href="#nav_tabs_content_1758148735997_134" role="tab" aria-controls="nav_tabs_content_1758148735997_134" aria-selected="true" style="--tabs-link-color: #F79F24;">All Categories</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="nav_tabs_link_1757807252422_30" data-bs-toggle="tab" href="#nav_tabs_content_1757807252422_30" role="tab" aria-controls="nav_tabs_content_1757807252422_30" aria-selected="false" style="--tabs-link-color: #F79F24;" tabindex="-1">1ère</a>
+                                    <a class="nav-link" id="nav_tabs_link_1758148735997_135" data-bs-toggle="tab" href="#nav_tabs_content_1758148735997_135" role="tab" aria-controls="nav_tabs_content_1758148735997_135" aria-selected="false" style="--tabs-link-color: #F79F24;" tabindex="-1">1ère</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="nav_tabs_link_1757807252422_31" data-bs-toggle="tab" href="#nav_tabs_content_1757807252422_31" role="tab" aria-controls="nav_tabs_content_1757807252422_31" aria-selected="false" style="--tabs-link-color: #F79F24;" tabindex="-1">2ème</a>
+                                    <a class="nav-link" id="nav_tabs_link_1758148735997_136" data-bs-toggle="tab" href="#nav_tabs_content_1758148735997_136" role="tab" aria-controls="nav_tabs_content_1758148735997_136" aria-selected="false" style="--tabs-link-color: #F79F24;" tabindex="-1">2ème</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="nav_tabs_link_1757807252423_32" data-bs-toggle="tab" href="#nav_tabs_content_1757807252423_32" role="tab" aria-controls="nav_tabs_content_1757807252423_32" aria-selected="false" style="--tabs-link-color: #F79F24;" tabindex="-1">3ème</a>
+                                    <a class="nav-link" id="nav_tabs_link_1758148735997_137" data-bs-toggle="tab" href="#nav_tabs_content_1758148735997_137" role="tab" aria-controls="nav_tabs_content_1758148735997_137" aria-selected="false" style="--tabs-link-color: #F79F24;" tabindex="-1">3ème</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="s_tabs_content tab-content">
-                            <div class="tab-pane fade active show" id="nav_tabs_content_1757807252422_29" role="tabpanel" aria-labelledby="nav_tabs_link_1757807252422_29">
+                            <div class="tab-pane fade active show" id="nav_tabs_content_1758148735997_134" role="tabpanel" aria-labelledby="nav_tabs_link_1758148735997_134">
                                 <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="DRAG BUILDING BLOCKS HERE">
-                                    <section class="s_embed_code pb64 text-center pt32" data-snippet="s_embed_code" data-name="Embed Code">
-                                        <template class="s_embed_code_saved">
-                                            <div class="row g-4">
-                                                <div class="col-md-4">
-                                                    <a href="/slides/all/tag/1ere-1?prevent_redirect=True" class="card-link-wrapper">
-                                                        <div class="card h-100 shadow-sm card-modern">
-                                                            <img src="/web/image/slide.channel/6/image_512/Basics%20of%20Furniture%20Creation?unique=8d2cb9e" class="card-img-top" alt="Algébre" loading="lazy"/>
-                                                            <div class="card-body d-flex flex-column">
-                                                                <h5 class="card-title">Algébre</h5>
-                                                                <p class="card-text">Brief description of Algébre course.</p>
-                                                            </div>
-                                                            <div class="card-footer d-flex align-items-center mt-auto">
-                                                                <i class="fa fa-clock me-1"/>
-                                                                <span>2h 15min</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a href="/slides/2" class="card-link-wrapper">
-                                                        <div class="card h-100 shadow-sm card-modern">
-                                                            <img src="web/image/slide.channel/5/image_512/Furniture%20Technical%20Specifications?unique=b041c87" class="card-img-top" alt="Algorithme" loading="lazy"/>
-                                                            <div class="card-body d-flex flex-column">
-                                                                <h5 class="card-title">Algorithme</h5>
-                                                                <p class="card-text">Brief description of Algorithme course.</p>
-                                                            </div>
-                                                            <div class="card-footer d-flex align-items-center mt-auto">
-                                                                <i class="fa fa-clock me-1"/>
-                                                                <span>1h 50min</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a href="/slides/3" class="card-link-wrapper">
-                                                        <div class="card h-100 shadow-sm card-modern">
-                                                            <img src="web/image/slide.channel/5/image_512/Furniture%20Technical%20Specifications?unique=b041c87" class="card-img-top" alt="Système logique et architecture des ordinateurs" loading="lazy"/>
-                                                            <div class="card-body d-flex flex-column">
-                                                                <h5 class="card-title">Systéme logique et architechure des ordinateurs</h5>
-                                                                <p class="card-text">Brief description of this course.</p>
-                                                            </div>
-                                                            <div class="card-footer d-flex align-items-center mt-auto">
-                                                                <i class="fa fa-clock me-1"/>
-                                                                <span>3h 20min</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="view-all-container text-center mt-4">
-                                                <a href="/slides/all" class="btn-view-all">
-        View All 
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    <i class="fa fa-chevron-right"/>
-                                                </a>
-                                            </div>
-                                        </template>
-                                        <div class="s_embed_code_embedded o_not_editable container"><div class="row g-4">
-                                                <div class="col-md-4">
-                                                    <a href="/slides/all/tag/1ere-1?prevent_redirect=True" class="card-link-wrapper">
-                                                        <div class="card h-100 shadow-sm card-modern">
-                                                            <img src="/web/image/slide.channel/6/image_512/Basics%20of%20Furniture%20Creation?unique=8d2cb9e" class="card-img-top" alt="Algébre" loading="lazy"/>
-                                                            <div class="card-body d-flex flex-column">
-                                                                <h5 class="card-title">Algébre</h5>
-                                                                <p class="card-text">Brief description of Algébre course.</p>
-                                                            </div>
-                                                            <div class="card-footer d-flex align-items-center mt-auto">
-                                                                <i class="fa fa-clock me-1"/>
-                                                                <span>2h 15min</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a href="/slides/2" class="card-link-wrapper">
-                                                        <div class="card h-100 shadow-sm card-modern">
-                                                            <img src="web/image/slide.channel/5/image_512/Furniture%20Technical%20Specifications?unique=b041c87" class="card-img-top" alt="Algorithme" loading="lazy"/>
-                                                            <div class="card-body d-flex flex-column">
-                                                                <h5 class="card-title">Algorithme</h5>
-                                                                <p class="card-text">Brief description of Algorithme course.</p>
-                                                            </div>
-                                                            <div class="card-footer d-flex align-items-center mt-auto">
-                                                                <i class="fa fa-clock me-1"/>
-                                                                <span>1h 50min</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a href="/slides/3" class="card-link-wrapper">
-                                                        <div class="card h-100 shadow-sm card-modern">
-                                                            <img src="web/image/slide.channel/5/image_512/Furniture%20Technical%20Specifications?unique=b041c87" class="card-img-top" alt="Système logique et architecture des ordinateurs" loading="lazy"/>
-                                                            <div class="card-body d-flex flex-column">
-                                                                <h5 class="card-title">Systéme logique et architechure des ordinateurs</h5>
-                                                                <p class="card-text">Brief description of this course.</p>
-                                                            </div>
-                                                            <div class="card-footer d-flex align-items-center mt-auto">
-                                                                <i class="fa fa-clock me-1"/>
-                                                                <span>3h 20min</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div><div class="view-all-container text-center mt-4">
-                                                <a href="/slides/all" class="btn-view-all">
-        View All 
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    <i class="fa fa-chevron-right"/>
-                                                </a>
-                                            </div></div>
-                                    </section>
-                                </div>
+                                    
+                                <section class="categories_section" data-snippet="category_template_highlight" data-name="Category Highlight"><section class="categories_section"><div class="container"><div class="row g-4"><div class="col-md-4"><a class="card-link-wrapper" href="/slides/1"><div class="card h-100 shadow-sm card-modern"><img class="card-img-top" loading="lazy" src="/web/image/slide.channel/1/image_512" alt="Basics of Gardening"/><div class="card-body d-flex flex-column"><h5 class="card-title">Basics of Gardening</h5><p class="card-text"> Brief Description of this course </p></div><div class="card-footer d-flex align-items-center mt-auto"><i class="fa fa-clock me-1"/>0h 50min</div></div></a></div><div class="col-md-4"><a class="card-link-wrapper" href="/slides/2"><div class="card h-100 shadow-sm card-modern"><img class="card-img-top" loading="lazy" src="/web/image/slide.channel/2/image_512" alt="Taking care of Trees"/><div class="card-body d-flex flex-column"><h5 class="card-title">Taking care of Trees</h5><p class="card-text"> Brief Description of this course </p></div><div class="card-footer d-flex align-items-center mt-auto"><i class="fa fa-clock me-1"/>1h 10min</div></div></a></div><div class="col-md-4"><a class="card-link-wrapper" href="/slides/6"><div class="card h-100 shadow-sm card-modern"><img class="card-img-top" loading="lazy" src="/web/image/slide.channel/6/image_512" alt="Basics of Furniture Creation"/><div class="card-body d-flex flex-column"><h5 class="card-title">Basics of Furniture Creation</h5><p class="card-text"> Brief Description of this course </p></div><div class="card-footer d-flex align-items-center mt-auto"><i class="fa fa-clock me-1"/>1h 0min</div></div></a></div></div><div class="view-all-container text-center mt-4"><a href="/slides/all" class="btn-view-all"> View All <i class="fa fa-chevron-right"/></a></div></div></section></section></div>
                             </div>
-                            <div class="tab-pane fade" id="nav_tabs_content_1757807252422_30" role="tabpanel" aria-labelledby="nav_tabs_link_1757807252422_30">
+                            <div class="tab-pane fade" id="nav_tabs_content_1758148735997_135" role="tabpanel" aria-labelledby="nav_tabs_link_1758148735997_135">
                                 <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="DRAG BUILDING BLOCKS HERE">
                                     <section class="s_embed_code pb64 text-center pt32" data-snippet="s_embed_code" data-name="Embed Code">
                                         <template class="s_embed_code_saved">
@@ -454,7 +328,7 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav_tabs_content_1757807252422_31" role="tabpanel" aria-labelledby="nav_tabs_link_1757807252422_31">
+                            <div class="tab-pane fade" id="nav_tabs_content_1758148735997_136" role="tabpanel" aria-labelledby="nav_tabs_link_1758148735997_136">
                                 <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="DRAG BUILDING BLOCKS HERE">
                                     <section class="s_text_block pt64 pb64" data-snippet="s_text_block" data-name="Text">
                                         <div class="s_allow_columns container">
@@ -467,7 +341,7 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav_tabs_content_1757807252423_32" role="tabpanel" aria-labelledby="nav_tabs_link_1757807252423_32">
+                            <div class="tab-pane fade" id="nav_tabs_content_1758148735997_137" role="tabpanel" aria-labelledby="nav_tabs_link_1758148735997_137">
                                 <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="DRAG BUILDING BLOCKS HERE">
                                     <section class="s_text_block pt64 pb64" data-snippet="s_text_block" data-name="Text">
                                         <div class="s_allow_columns container">
@@ -888,8 +762,8 @@
             </section>
             <section class="s_color_blocks_2 o_colored_level pb72" data-snippet="s_color_blocks_2" data-name="Big Boxes">
                 <div class="container">
-                    <div class="row o_grid_mode" data-row-count="16" style="column-gap: 30px;">
-                        <div class="o_colored_level o_grid_item rounded o_cc o_cc4 g-height-15 g-col-lg-12 col-lg-12" style="z-index: 1; --grid-item-padding-y: 104.96px; --grid-item-padding-x: 64.8438px; grid-area: 2 / 1 / 17 / 13; background-color: rgb(246, 244, 255); border-radius: 100px !important; border-color: rgb(123, 63, 242) !important;">
+                    <div class="row o_grid_mode" data-row-count="15" style="column-gap: 30px;">
+                        <div class="o_colored_level o_grid_item rounded o_cc o_cc4 g-col-lg-12 g-height-13 col-lg-12" style="z-index: 1; --grid-item-padding-y: 104.96px; --grid-item-padding-x: 64.8438px; grid-area: 3 / 1 / 16 / 13; background-color: rgb(246, 244, 255); border-radius: 100px !important; border-color: rgb(123, 63, 242) !important;">
                             <h1 style="text-align: center;" class="display-4">
                                 <span style="font-size: 2.5rem;">
                                     <font class="text-900">How to Become a Teacher ?</font>
@@ -954,7 +828,7 @@
                     </div>
                 </div>
 
-            </section><section class="s_comparisons pt48 pb48 o_colored_level" data-vxml="001" data-vcss="001" data-snippet="s_comparisons" data-name="Comparisons" style="background-color: rgb(17, 24, 39);">
+            </section><section class="s_comparisons pt48 pb48 o_colored_level" data-vxml="001" data-vcss="001" data-snippet="s_comparisons" data-name="Comparisons" style="background-color: rgb(17, 24, 39); position: relative;">
         <div class="container">
             
             <div class="row gap-4 gap-lg-0 o_grid_mode" data-row-count="17">
@@ -1158,3 +1032,77 @@
         </div>
     </t>
 </t>
+
+
+
+
+
+
+
+
+
+
+
+<!-- STATIC FEATURED COURSES SECTION -->
+<!-- <div class="row g-4">
+                                                <div class="col-md-4">
+                                                    <a href="/slides/all/tag/1ere-1?prevent_redirect=True" class="card-link-wrapper">
+                                                        <div class="card h-100 shadow-sm card-modern">
+                                                            <img src="/web/image/slide.channel/6/image_512/Basics%20of%20Furniture%20Creation?unique=8d2cb9e" class="card-img-top" alt="Algébre" loading="lazy">
+                                                            <div class="card-body d-flex flex-column">
+                                                                <h5 class="card-title">Algébre</h5>
+                                                                <p class="card-text">Brief description of Algébre course.</p>
+                                                            </div>
+                                                            <div class="card-footer d-flex align-items-center mt-auto">
+                                                                <i class="fa fa-clock me-1"></i>
+                                                                <span>2h 15min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="/slides/2" class="card-link-wrapper">
+                                                        <div class="card h-100 shadow-sm card-modern">
+                                                            <img src="web/image/slide.channel/5/image_512/Furniture%20Technical%20Specifications?unique=b041c87" class="card-img-top" alt="Algorithme" loading="lazy">
+                                                            <div class="card-body d-flex flex-column">
+                                                                <h5 class="card-title">Algorithme</h5>
+                                                                <p class="card-text">Brief description of Algorithme course.</p>
+                                                            </div>
+                                                            <div class="card-footer d-flex align-items-center mt-auto">
+                                                                <i class="fa fa-clock me-1"></i>
+                                                                <span>1h 50min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="/slides/3" class="card-link-wrapper">
+                                                        <div class="card h-100 shadow-sm card-modern">
+                                                            <img src="web/image/slide.channel/5/image_512/Furniture%20Technical%20Specifications?unique=b041c87" class="card-img-top" alt="Système logique et architecture des ordinateurs" loading="lazy">
+                                                            <div class="card-body d-flex flex-column">
+                                                                <h5 class="card-title">Systéme logique et architechure des ordinateurs</h5>
+                                                                <p class="card-text">Brief description of this course.</p>
+                                                            </div>
+                                                            <div class="card-footer d-flex align-items-center mt-auto">
+                                                                <i class="fa fa-clock me-1"></i>
+                                                                <span>3h 20min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="view-all-container text-center mt-4">
+                                                <a href="/slides/all" class="btn-view-all">
+        View All 
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </a>
+                                            </div> -->
