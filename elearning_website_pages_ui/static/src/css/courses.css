@@ -1,9 +1,16 @@
+/* Change background color of Odoo courses page */
+#wrap.o_wslides_wrap {
+    background-color: #F6F4FF !important;
+}
+
 /* Navbar background */
 .o_wslides_home_nav .navbar {
-    background-color: #f0f4ff !important; /* Customize as needed */
+    background-color: #FFFFFF !important; /* Customize as needed */
     padding: 12px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 10px; /* unified with subnav border-radius */
+    border: 1px solid #ddd !important; /* Gray border */
+    box-shadow: none !important; /* Remove shadow */
+    max-width: 1255px;
 }
 
 /* Links inside navbar */
@@ -49,4 +56,37 @@
 .o_wslides_home_nav .navbar .dropdown-item.active {
     background-color: #7b3ff22e !important;
     color: #1a1a1a !important;
+}
+
+/* Style search input inside courses subnav */
+.o_wslides_home_nav .navbar .form-control {
+    border: 1px solid #ddd !important; /* Gray border */
+    border-radius: 8px 0 0 8px; /* Left rounded */
+    padding: 6px 12px;
+    box-shadow: none; /* Remove default BS shadow */
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* On focus */
+.o_wslides_home_nav .navbar .form-control:focus {
+    border-color: #7B3FF2 !important; /* Highlight on focus */
+    background-color: #ffffff !important; /* Pop out on focus */
+    outline: none;
+    box-shadow: none !important; /* No glow */
+}
+
+/* Search button */
+.o_wslides_home_nav .navbar .btn {
+    background-color: #7B3FF2 !important; /* Purple button */
+    color: #ffffff !important;            /* White icon/text */
+    border: 1px solid #7B3FF2 !important;
+    border-left: none !important;         /* Merge with input */
+    border-radius: 0 8px 8px 0;           /* Right rounded */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover state for search button */
+.o_wslides_home_nav .navbar .btn:hover {
+    background-color: #5e2bb8 !important; /* Darker purple on hover */
+    border-color: #5e2bb8 !important;     /* Darker border on hover */
 }

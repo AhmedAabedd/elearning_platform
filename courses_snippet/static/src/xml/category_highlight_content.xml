@@ -36,12 +36,19 @@
                                     <div class="card-footer d-flex align-items-center mt-auto">
                                         <i class="fa fa-clock me-1"></i>
                                         <span>
-                                            <t t-if="course.total_slides">
-                                                <!-- Convert total slides to approximate hours (assuming 10min per slide) -->
-                                                <t t-set="total_minutes" t-value="course.total_slides * 10"/>
-                                                <t t-set="hours" t-value="Math.floor(total_minutes / 60)"/>
-                                                <t t-set="minutes" t-value="total_minutes % 60"/>
-                                                <t t-esc="hours + 'h ' + minutes + 'min'"/>
+                                            <t t-if="course.total_time > 0">
+                                                 <!-- Convert float hours to hours and minutes -->
+                                                <t t-set="hours" t-value="Math.floor(course.total_time)"/>
+                                                <t t-set="minutes" t-value="Math.round((course.total_time - hours) * 60)"/>
+                                                
+                                                <!-- Handle edge case where minutes might be 60 -->
+                                                <t t-if="minutes >= 60">
+                                                    <t t-set="hours" t-value="hours + 1"/>
+                                                    <t t-set="minutes" t-value="0"/>
+                                                </t>
+                                                
+                                                <!-- Display formatted time -->
+                                                <t t-esc="hours + 'h ' + minutes + ' min'"/>
                                             </t>
                                             <t t-else="">
                                                 0h 0min

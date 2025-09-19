@@ -13,7 +13,7 @@
     'license': 'LGPL-3',
     'depends': [
         'website',
-        'website_sale'
+        'website_slides'
     ],
     'data': [
         'views/inherit_slide_channel_view.xml',
