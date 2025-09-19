@@ -8,9 +8,9 @@ class WebsiteProduct(http.Controller):
 
 
     
-    @http.route('/get_product_categories', auth="public", type='json', website=True)
+    @http.route('/get_featured_courses', auth="public", type='json', website=True)
     def get_product_category(self):
-        """Get the website categories for the snippet."""
+
         public_categs = request.env['product.public.category'].sudo().search_read(
             [('parent_id', '=', False)], fields=['name', 'image_1920', 'id']
         )

@@ -6,11 +6,11 @@ import { rpc } from "@web/core/network/rpc";
 
 
 publicWidget.registry.get_product_tab = publicWidget.Widget.extend({
-    selector : '.categories_section',
+    selector : '.featured_courses_section',
     async willStart() {
-        const result = await rpc('/get_product_categories', {});
+        const result = await rpc('/get_featured_courses', {});
         if(result){
-            this.$target.empty().html(renderToElement('courses_snippet.category_data', {result: result}))
+            this.$target.empty().html(renderToElement('courses_snippet.courses_data', {result: result}))
         }
     },
 });

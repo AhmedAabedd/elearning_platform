@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--Product Category tab content template-->
+<!--Featured Courses tab content template-->
 <templates xml:space="preserve">
-    <t t-name="courses_snippet.category_data">
+    <t t-name="courses_snippet.courses_data">
 
-        <section class="categories_section">
+        <section class="featured_courses_section">
             <div class="container">
                 <div class="row g-4">
                     <t t-foreach="result.courses" t-as="course" t-key="course.id">
