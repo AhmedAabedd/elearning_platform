@@ -1,0 +1,93 @@
+/* Target only the course navigation header */
+    .o_wslides_course_nav {
+        background: #7B3FF2 !important;
+        color: white !important;
+    }
+
+    /* Make all text white */
+    .o_wslides_course_nav,
+    .o_wslides_course_nav .breadcrumb,
+    .o_wslides_course_nav .breadcrumb-item,
+    .o_wslides_course_nav .breadcrumb a,
+    .o_wslides_course_nav .btn,
+    .o_wslides_course_nav .dropdown-toggle,
+    .o_wslides_course_nav .dropdown-item {
+        color: white !important;
+    }
+
+    /* Search input specific styling */
+    .o_wslides_course_nav .o_wslides_course_nav_search .form-control {
+        background: rgba(255, 255, 255, 0.1) !important;
+        border-color: rgba(255, 255, 255, 0.3) !important;
+        color: white !important;
+    }
+
+    .o_wslides_course_nav .o_wslides_course_nav_search .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+/* Course header main container */
+    .o_wslides_course_header {
+        background: #7B3FF2 !important;
+        color: white !important;
+        padding: 20px 0;
+    }
+
+    /* Course title */
+    .o_wslides_course_title {
+        color: white !important;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    /* Course description */
+    .o_wslides_course_description {
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* Review button */
+    .o_wslides_course_review_button {
+        background: rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid rgba(255, 255, 255, 0.4) !important;
+        color: white !important;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+
+    .o_wslides_course_review_button:hover {
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* Stats and numbers */
+    .o_wslides_course_stats {
+        color: white !important;
+    }
+
+    .o_wslides_course_stats i {
+        color: white !important;
+        opacity: 0.8;
+    }
+
+    /* Subtle hover effect */
+        .o_wslides_nav_tabs .nav-link:hover {
+            background-color: rgba(123, 63, 242, 0.05) !important;
+            color: #FFFFFF !important;
+        }
+
+        .o_wslides_nav_tabs .nav-link.active {
+            background-color: #F6F4FF !important;
+            color: #7B3FF2 !important;
+    }
+
+/* Change the background of the whole course page */
+    .o_wslides_body,
+    .wrap.mt-0,
+    .o_wslides_course_main {
+        background-color: #F6F4FF !important;
+    }
+
+
+
+/* Replace THE_EXACT_CLASS with the actual class name from inspection */

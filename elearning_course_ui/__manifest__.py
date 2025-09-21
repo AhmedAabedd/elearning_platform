@@ -14,6 +14,12 @@
         "templates/course_price_box.xml",
         "templates/request_access_button.xml",
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'elearning_course_ui/static/src/scss/course.css',
+        ],
+    },
+
     "installable": True,
     "application": False,
 }

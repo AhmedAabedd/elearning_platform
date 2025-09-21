@@ -18,6 +18,19 @@
                 </t>
             </li>
         </xpath>
+
+        <!-- MODIFY THE USER DROPDOWN WITH CUSTOM USERNAME STYLING -->
+        <xpath expr="//t[@t-call='portal.user_dropdown']" position="replace">
+            <t t-call="portal.user_dropdown">
+                <t t-set="_icon" t-value="true"/>
+                <t t-set="_user_name" t-value="true"/>
+                <t t-set="_user_name_class" t-value="'user-name-display ms-2'"/> <!-- Custom class -->
+                <t t-set="_item_class" t-value="'dropdown'"/>
+                <t t-set="_link_class" t-value="'o_navlink_background btn d-flex align-items-center border-0 text-reset'"/>
+                <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-end'"/>
+                <t t-set="_icon_class" t-value="'user-icon'"/> <!-- Optional: style the icon -->
+            </t>
+        </xpath>
     </template>
 
 </odoo>

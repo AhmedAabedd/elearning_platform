@@ -37,23 +37,13 @@
     width: 25px;
 }
 
-/* Contact Us button 
-    a.btn_cta.btn-primary[href="/contactus"] {
-        background: #F79F24 !important;
-        border: none !important;
-        color: white !important;
-    }
-
-    a.btn_cta.btn-primary[href="/contactus"]:hover {
-        background: #df8e1d !important;
-    }*/
-
 /* " CONFIGURING DROP DOWN, SEARCH AND SIGN IN BUTTONS " */
 
     /* Orange background for dropdown button */
     #o_main_nav .o_navlink_background.btn.text-reset,
     #o_main_nav .o_navlink_background.btn.border-0.text-reset {
         background-color: #F79F24 !important;
+        border-radius: 20px;
     }
 
     /* White background for search button */
@@ -105,6 +95,7 @@
     #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"] {
         background-color: #F79F24 !important;
         color: white !important;
+        padding: 9px 22px !important;
     }
 
     /* Hover effect for Sign In button */
@@ -151,4 +142,32 @@
     #o_main_nav .o_navlink_background.btn.text-reset:hover::before,
     #o_main_nav .o_navlink_background.btn.border-0.text-reset:hover::before {
         color: white !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Style for the username display */
+    .user-name-display {
+        font-weight: 500;
+        font-size: 14px;
+        color: inherit !important;
+        max-width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Ensure proper alignment */
+    .o_navlink_background.btn.d-flex.align-items-center {
+        /* gap: 0px; */
+        padding: 9px 12px !important;
     }
