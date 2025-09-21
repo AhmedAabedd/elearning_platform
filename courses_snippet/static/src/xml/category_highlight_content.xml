@@ -28,7 +28,12 @@
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title" t-esc="course.name"/>
                                         <p class="card-text">
-                                            Brief Description of this course
+                                            <t t-if="course.featured_description">
+                                                <t t-esc="course.featured_description"/>
+                                            </t>
+                                            <t t-else="">
+                                                No Description for this course
+                                            </t>
                                         </p>
                                     </div>
                                     

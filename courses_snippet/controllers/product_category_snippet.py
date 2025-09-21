@@ -16,7 +16,7 @@ class WebsiteProduct(http.Controller):
         ) """
 
         featured_course = request.env['slide.channel'].sudo().search_read(
-            [('is_featured', '=', True)], fields=['name', 'image_1920', 'id', 'description', 'total_time']
+            [('is_featured', '=', True)], fields=['name', 'image_1920', 'id', 'featured_description', 'total_time']
         )
 
         values = {

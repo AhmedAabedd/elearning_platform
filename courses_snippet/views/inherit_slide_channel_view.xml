@@ -12,6 +12,11 @@
                 <field name="is_featured"/>
             </xpath>
             
+            <xpath expr="//field[@name='description']" position="after">
+                <label for="featured_description">Description</label>
+                <field name="featured_description" placeholder="This description will appear in the featured courses cards of the home page..."/>
+            </xpath>
+
         </field>
     </record>
 

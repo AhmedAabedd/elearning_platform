@@ -9,3 +9,4 @@ class SlideChannel(models.Model):
 
 
     is_featured = fields.Boolean(string="Show in Featured", default=False)
+    featured_description = fields.Text(string="Description", required=True)

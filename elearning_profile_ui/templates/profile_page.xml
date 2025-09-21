@@ -6,7 +6,7 @@
             <!-- Remove default gradient -->
             <attribute name="class">o_wprofile_header text-white</attribute>
             <!-- Add custom background color -->
-            <attribute name="style">background-color: #007bff;</attribute>
+            <attribute name="style">background-color: #7B3FF2;</attribute>
         </xpath>
     </template>
 

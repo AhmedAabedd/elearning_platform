@@ -587,247 +587,206 @@
 
 
 
+/*############## SECTION 8 : WHAT ARE YOU WAITING FOR ################*/
+
+    /* Add lighting/glowing shadow to the CTA content box */
+    .s_call_to_action .cta-content {
+        position: relative; /* ensure shadow works correctly */
+        padding: 40px 20px; /* optional: add some inner spacing */
+        border-radius: 20px; /* rounded corners */
+        background-color: #7B3FF2; /* optional: make sure shadow shows on colored background */
+        display: flex;
+        flex-direction: column; /* stack elements vertically */
+        align-items: center;    /* center horizontally */
+        justify-content: center; /* center vertically inside the div */
+        text-align: center;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Add lighting/glowing shadow to the CTA content box */
-.s_call_to_action .cta-content {
-    position: relative; /* ensure shadow works correctly */
-    padding: 40px 20px; /* optional: add some inner spacing */
-    border-radius: 20px; /* rounded corners */
-    background-color: #7B3FF2; /* optional: make sure shadow shows on colored background */
-    display: flex;
-    flex-direction: column; /* stack elements vertically */
-    align-items: center;    /* center horizontally */
-    justify-content: center; /* center vertically inside the div */
-    text-align: center;
-
-
-    /* Glowing/light shadow effect */
-    box-shadow: 
-        0 0 20px rgba(123, 63, 242, 0.4),
-        0 0 40px rgba(123, 63, 242, 0.3),
-        0 0 60px rgba(123, 63, 242, 0.2);
-}
-
-
-
-    .s_call_to_action .cta-content .btn-fill-custom {
-        margin-top: 25px; /* adds space above the button */
+        /* Glowing/light shadow effect */
+        box-shadow: 
+            0 0 20px rgba(123, 63, 242, 0.4),
+            0 0 40px rgba(123, 63, 242, 0.3),
+            0 0 60px rgba(123, 63, 242, 0.2);
     }
 
 
 
+        .s_call_to_action .cta-content .btn-fill-custom {
+            margin-top: 25px; /* adds space above the button */
+        }
 
 
 
-  /* Start Now button - initial style */
-    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg {
-        background-color: #111827 !important;
-        color: #fff !important;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        transition: color 0.5s ease !important;
-        border: none !important;
+
+
+
+    /* Start Now button - initial style */
+        a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg {
+            background-color: #111827 !important;
+            color: #fff !important;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.5s ease !important;
+            border: none !important;
+        }
+
+        /* Pseudo-element for bottom-to-top fill effect */
+        a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: -10%;
+            width: 120%;
+            height: 250%;
+            background: #fff; /* Fill color */
+            transition: top 0.5s ease;
+            z-index: -1;
+            border-radius: 50% 50% 30% 30%;
+            pointer-events: none;
+        }
+
+        /* Remove default Odoo hover effects */
+        a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover {
+            filter: none !important;
+        }
+
+        /* Hover animation */
+        a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover::before {
+            top: -50%;
+        }
+
+        /* Text color change on hover */
+        a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover {
+            color: #111827 !important;
+        }
+
+
+
+/*############## SECTION 9 : SYMBOLIC PRICING ################*/
+
+
+    /* Cards wrapper */
+    .pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* align bottoms */
+    gap: 25px;             /* reduced space between cards */
+    flex-wrap: wrap;
+    position: relative;
+    }
+
+    /* Base card */
+    .pricing-card {
+    width: 320px;
+    min-height: 400px; /* Set a fixed minimum height */
+    padding: 50px 35px;
+    border-radius: 16px;
+    text-align: center;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: #e6eef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* default */
+    }
+
+    /* Middle highlighted card */
+    .pricing-card.highlight {
+    width: 380px;
+    min-height: 450px; /* Increased height for highlighted card */
+    padding: 65px 45px;
+    background: linear-gradient(180deg,#1e1b3a 0%, #171425 100%);
+    border: 2px solid #7B3FF2;
+    box-shadow: 0 14px 40px rgba(123,63,242,0.55), 0 6px 18px rgba(0,0,0,0.6);
+    z-index: 10; /* higher than others */
+    margin-bottom: 0; /* align bottom with others */
+    }
+
+    /* Text inside cards */
+    .pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    }
+
+    .pricing-card .price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #F79F24;
+    }
+
+    .pricing-card .desc {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    }
+
+    /* Button - Updated with transparent background and solid border */
+    .btn-pricing {
+    display: inline-block;
+    padding: 14px 34px;
+    border-radius: 999px;
+    background: #fbbe2410;
+    border: 1px solid #F79F24;
+    color: #F79F24;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     }
 
     /* Pseudo-element for bottom-to-top fill effect */
-    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg::before {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: -10%;
-        width: 120%;
-        height: 250%;
-        background: #fff; /* Fill color */
-        transition: top 0.5s ease;
-        z-index: -1;
-        border-radius: 50% 50% 30% 30%;
-        pointer-events: none;
-    }
-
-    /* Remove default Odoo hover effects */
-    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover {
-        filter: none !important;
+    .btn-pricing::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -8%;
+    width: 120%;
+    height: 250%;
+    background: #F79F24; /* Fill color */
+    transition: top 0.5s ease;
+    z-index: -1;
+    border-radius: 50% 50% 30% 30%;
+    pointer-events: none;
     }
 
     /* Hover animation */
-    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover::before {
-        top: -50%;
+    .btn-pricing:hover::before {
+    top: -50%;
     }
 
-    /* Text color change on hover */
-    a[href="/slides"].btn-fill-custom.text-o-color-4.bg-o-color-5.btn-lg:hover {
-        color: #111827 !important;
+    /* Hover effect */
+    .btn-pricing:hover {
+    color: #111827;
+    text-decoration: none;  /* Remove underline on hover */
+    /* box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3); */
     }
 
+    /* Remove ALL hover effects from ALL cards */
+    .pricing-card,
+    .pricing-card.highlight {
+    transition: none !important;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Cards wrapper */
-.pricing-cards {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* align bottoms */
-  gap: 25px;             /* reduced space between cards */
-  flex-wrap: wrap;
-  position: relative;
-}
-
-/* Base card */
-.pricing-card {
-  width: 320px;
-  min-height: 400px; /* Set a fixed minimum height */
-  padding: 50px 35px;
-  border-radius: 16px;
-  text-align: center;
-  background: rgba(255,255,255,0.04);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.06);
-  color: #e6eef8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 1; /* default */
-}
-
-/* Middle highlighted card */
-.pricing-card.highlight {
-  width: 380px;
-  min-height: 450px; /* Increased height for highlighted card */
-  padding: 65px 45px;
-  background: linear-gradient(180deg,#1e1b3a 0%, #171425 100%);
-  border: 2px solid #7B3FF2;
-  box-shadow: 0 14px 40px rgba(123,63,242,0.55), 0 6px 18px rgba(0,0,0,0.6);
-  z-index: 10; /* higher than others */
-  margin-bottom: 0; /* align bottom with others */
-}
-
-/* Text inside cards */
-.pricing-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #ffffff;
-}
-
-.pricing-card .price {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #fbbf24;
-}
-
-.pricing-card .desc {
-  font-size: 1.05rem;
-  color: #cbd5e1;
-  margin-bottom: 25px;
-  flex-grow: 1;
-}
-
-/* Button - Updated with transparent background and solid border */
-.btn-pricing {
-  display: inline-block;
-  padding: 14px 34px;
-  border-radius: 999px;
-  background: #fbbe2410;
-  border: 1px solid #fbbf24;
-  color: #fbbf24;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-
-/* .btn-pricing:hover {
-  
-} */
-
-/* Pseudo-element for bottom-to-top fill effect */
-.btn-pricing::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: -10%;
-  width: 120%;
-  height: 250%;
-  background: #fbbf24; /* Fill color */
-  transition: top 0.5s ease;
-  z-index: -1;
-  border-radius: 50% 50% 30% 30%;
-  pointer-events: none;
-}
-
-/* Hover animation */
-.btn-pricing:hover::before {
-  top: -50%;
-}
-
-/* Hover effect */
-.btn-pricing:hover {
-  color: #111827;
-  text-decoration: none;  /* Remove underline on hover */
-  /* box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3); */
-}
-
-/* Remove ALL hover effects from ALL cards */
-.pricing-card,
-.pricing-card.highlight {
-  transition: none !important;
-}
-
-/* Responsive */
-@media (max-width: 991.98px) {
-  .pricing-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .pricing-card,
-  .pricing-card.highlight {
-    width: 100%;
-    max-width: 480px;
-    min-height: auto; /* Allow natural height on mobile */
-  }
-}
+    /* Responsive */
+    @media (max-width: 991.98px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card,
+    .pricing-card.highlight {
+        width: 100%;
+        max-width: 480px;
+        min-height: auto; /* Allow natural height on mobile */
+    }
+    }
