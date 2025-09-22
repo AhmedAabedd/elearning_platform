@@ -1,0 +1,9 @@
+/* Change background color of the specific div */
+div#wrap.o_wprofile_wrap {
+    background-color: #F6F4FF !important;
+}
+
+/* Hide the Public Profile checkbox section */
+.o_wprofile_editor_form .my-3.mb-0.pt-2.border-top {
+    display: none !important;
+}

@@ -8,12 +8,14 @@
     "license": "LGPL-3",
     "depends": ["website_profile"],
     "data": [
-        "templates/dropdown_list_account_button.xml",
+        "templates/dropdown_list_button.xml",
         "templates/profile_page.xml",
+        "templates/edit_profile_page.xml",
     ],
     'assets': {
         'web.assets_frontend': [
             'elearning_profile_ui/static/src/scss/hide_card_xp.css',
+            'elearning_profile_ui/static/src/scss/edit_profile.css',
         ],
     },
     "installable": True,

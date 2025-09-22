@@ -10,18 +10,17 @@
         </xpath>
     </template>
 
-    <!-- Add a header 'My Profile' on the top right     -->
+    <!-- Add a header 'My Profile' on the top left -->
     <template id="user_profile_header_with_breadcrumb" inherit_id="website_profile.user_profile_header" name="Profile Page Header with Breadcrumb">
         <xpath expr="//div[contains(@class,'o_wprofile_header')]/div[@class='container pb-3 pb-md-0 pt-2 pt-md-5']/div[@class='row']" position="before">
-            <div class="container d-flex align-items-center mb-3">
-                <a href="/" class="text-white fw-bold me-2">
+            <div class="container d-flex align-items-center mb-4">
+                <a href="/" class="text-secondary fw-bold me-2">
                     <i class="fa fa-home"></i>
                 </a>
                 <span class="text-white">/ My Profile</span>
             </div>
         </xpath>
     </template>
-
 
     <!-- Remove Users link -->
     <template id="remove_users_link" inherit_id="website_profile.user_profile_sub_nav" name="Remove Users link">
@@ -56,6 +55,12 @@
     <template id="remove_badges_section" inherit_id="website_profile.user_profile_content" name="Remove Bottom Badges">
         <xpath expr="//div[@id='profile_about_badge']" position="attributes">
             <attribute name="class">d-none</attribute>
+        </xpath>
+    </template>
+
+    <template id="remove_biography_section" inherit_id="website_profile.user_profile_content" name="Remove Biography Section">
+        <xpath expr="//div[@t-if='user.partner_id.website_description' and hasclass('o_wprofile_editor_form')]" position="replace">
+            <!-- Biography section removed -->
         </xpath>
     </template>
 

@@ -8,3 +8,88 @@
     flex: 0 0 100% !important;
     max-width: 100% !important;
 }
+
+/*========= HEADER CUSTOM ======== */
+    /* Add white border to Edit Profile button */
+    .o_wprofile_header .btn-primary.d-none.d-md-inline-block {
+        border: 1px solid white !important;
+    }
+
+    /* Add white border to Edit button (phone view) */
+    .o_wprofile_header .btn-primary.d-inline-block.d-md-none {
+        border: 1px solid white !important;
+    }
+
+    /* Mobile Edit button positioning - Smaller size */
+    @media (max-width: 767.98px) {
+        .o_wprofile_header .col-12.col-md-4.col-lg-3 {
+            position: relative;
+        }
+        
+        .o_wprofile_header .btn-primary.d-inline-block.d-md-none {
+            position: absolute;
+            top: -40px; /* Adjusted for smaller button */
+            right: 5%;
+            z-index: 100;
+            margin: 0 !important;
+            min-width: 70px; /* Reduced width */
+            padding: 6px 12px !important; /* Smaller padding */
+            font-size: 12px !important; /* Smaller text */
+        }
+        
+        .o_wprofile_header .btn-primary.d-inline-block.d-md-none i {
+            margin-right: 4px !important; /* Reduced spacing */
+        }
+        
+        .o_wprofile_header .o_wprofile_pict {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-height: 160px !important;
+            background-size: cover !important;
+            background-position: center !important;
+        }
+    }
+
+    /* Hide mobile mode navigation */
+    .o_wprofile_user_profile_sub_nav_mobile_col,
+    .col.d-md-none.py-1 {
+        display: none !important;
+    }
+
+/*========= CONTENT CUSTOM ======== */
+    /* Profile page main background - target body and wrapper */
+    div#wrap.o_wprofile_wrap.mt-0 {
+        background-color: #F6F4FF !important;
+    }
+
+    /* Keep sidebar (CARD) white */
+    .o_wprofile_sidebar,
+    .o_wprofile_sidebar_top,
+    #o_wprofile_sidebar_collapse,
+    .table.table-sm,
+    .o_wprofile_sidebar_table {
+        background-color: white !important;
+    }
+
+    /* Tab navigation */
+    .o_wprofile_nav_tabs {
+        border-bottom: 1px solid rgba(123, 63, 242, 0.2) !important;
+    }
+
+    /* Tab buttons */
+        .o_wprofile_nav_tabs .nav-link.active {
+            background-color: #F6F4FF !important;
+        }
+
+        @media (max-width: 767.98px) {
+        .o_wprofile_nav_tabs .nav-link.active {
+            background-color: white !important;
+        }
+    
+    /* Hide sidebar on mobile */
+    @media (max-width: 767.98px) {
+        .col-12.col-md-4.col-lg-3.mt-3.mt-md-0 {
+            display: none !important;
+        }
+    }
+}

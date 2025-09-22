@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Add a header 'Edit Profile' on the top left -->
+    <template id="edit_profile_header_with_breadcrumb" inherit_id="website_profile.user_profile_edit_content" name="Edit Profile Header with Breadcrumb">
+        <xpath expr="//h1[@class='o_page_header']" position="replace">
+            <div class="container d-flex align-items-center mb-4">
+                <a t-attf-href="/profile/user/#{user.id}" class="text-primary fw-bold me-2">
+                    <i class="fa fa-user-circle"></i>
+                </a>
+                <span class="text-dark">/ Edit Profile</span>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
