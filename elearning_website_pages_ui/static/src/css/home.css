@@ -1,25 +1,27 @@
 /*############## SECTION 1 ################*/
 
     /* Color the Start Now button with orange */
-    a[href="#"].btn-fill-custom.text-white.bg-o-color-2 {
+    a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2 {
         background-color: #F79F24 !important;
         color: white !important;
+        padding: 12px 28px !important;
     }
 
     /* Keep Contact Us button white */
     a[href="/jobs"].btn-fill-custom.text-black.bg-white {
         background-color: white !important;
-        color: black !important;
+        color: #1A202C  !important; /* PROFESSIONAL BLACK */
+        padding: 12px 28px !important;
     }
 
     /* Remove default Odoo button hover effects */
-        a[href="#"].btn-fill-custom.text-white.bg-o-color-2:hover,
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2:hover,
         a[href="/jobs"].btn-fill-custom.text-black.bg-white:hover {
             filter: none !important; /* Remove any filters */
         }
 
     /* Bottom-to-top fill hover effect for Start Now button */
-        a[href="#"].btn-fill-custom.text-white.bg-o-color-2,
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2,
         a[href="/jobs"].btn-fill-custom.text-black.bg-white {
             position: relative;
             overflow: hidden;
@@ -29,7 +31,7 @@
         }
 
         /* Pseudo-element for the fill effect */
-        a[href="#"].btn-fill-custom.text-white.bg-o-color-2::before,
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2::before,
         a[href="/jobs"].btn-fill-custom.text-black.bg-white::before {
             content: "";
             position: absolute;
@@ -43,7 +45,7 @@
         }
 
         /* Start Now button - white fill on hover */
-        a[href="#"].btn-fill-custom.text-white.bg-o-color-2::before {
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2::before {
             background: #111827; /* White fill on hover */
         }
 
@@ -53,13 +55,13 @@
         }
 
         /* Hover effect - fill from bottom to top */
-        a[href="#"].btn-fill-custom.text-white.bg-o-color-2:hover::before,
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2:hover::before,
         a[href="/jobs"].btn-fill-custom.text-black.bg-white:hover::before {
             top: -50%;
         }
 
         /* Text color change on hover */
-        a[href="#"].btn-fill-custom.text-white.bg-o-color-2:hover {
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2:hover {
             color: white !important; /* Black text when orange button has white fill */
         }
 
@@ -686,7 +688,7 @@
     background: rgba(255,255,255,0.04);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.345);
     color: #e6eef8;
     display: flex;
     flex-direction: column;
