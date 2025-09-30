@@ -98,24 +98,40 @@
         padding: 9px 22px !important;
     }
 
-    /* Hover effect for Sign In button */
-    #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"]:hover {
-        background-color: #df8e1d !important; /* Darker orange on hover */
+    /* Orange background for Sign In button */
+    #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"] {
+        background-color: #F79F24 !important;
         color: white !important;
+        padding: 9px 22px !important;
+        position: relative !important;
+        overflow: hidden !important;
+        z-index: 1 !important;
+        transition: color 0.5s ease !important;
+        border: none !important;
     }
 
-    /* White text color for Sign In button */
-    #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"] span {
-        color: white !important;
+    /* Pseudo-element for the fill effect */
+    #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"]::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        width: 120%;
+        height: 250%;
+        transition: top 0.5s ease;
+        z-index: -1;
+        border-radius: 50% 50% 30% 30%;
+        background: #111827; /* Dark fill on hover */
     }
 
-    /* Hover effect for Sign In text */
-    #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"]:hover span {
-        color: white !important;
+    /* Hover effect - fill from bottom to top */
+    #o_main_nav .o_navlink_background.btn.border-0.text-reset[href*="/web/login"]:hover::before {
+        top: -50%;
     }
 
 
-    
+
+
 
     /* Make ALL icons and pseudo-elements in dropdown buttons white */
     #o_main_nav .o_navlink_background.btn.text-reset *,

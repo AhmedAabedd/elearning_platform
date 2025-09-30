@@ -910,3 +910,57 @@
             padding: 15px !important;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* =========== SIGNUP PAGE =========== */
+
+    /* Style the signup form to match login card */
+    .oe_signup_form {
+        background-color: #F6F4FF !important;
+        border: none !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 12px !important;
+        width: 375px !important;
+        padding: 30px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    /* Center form elements but keep text left-aligned */
+    .oe_signup_form .form-control {
+        text-align: left !important; /* Change this back to left */
+        margin-bottom: 1rem !important;
+    }
+
+    /* Center labels */
+    .oe_signup_form .form-label {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Center buttons and links */
+    .oe_signup_form .oe_login_buttons {
+        text-align: center !important;
+    }
+
+    /* Center alerts */
+    .oe_signup_form .alert {
+        text-align: center !important;
+        border-radius: 8px !important;
+    }
