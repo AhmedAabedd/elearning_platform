@@ -9,8 +9,8 @@
 
     /* Keep Contact Us button white */
     a[href="/jobs"].btn-fill-custom.text-black.bg-white {
-        background-color: white !important;
-        color: #1A202C  !important; /* PROFESSIONAL BLACK */
+        background-color: #7B3FF2!important;
+        color: white  !important; /* PROFESSIONAL BLACK */
         padding: 12px 28px !important;
     }
 
@@ -21,13 +21,21 @@
         }
 
     /* Bottom-to-top fill hover effect for Start Now button */
-        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2,
-        a[href="/jobs"].btn-fill-custom.text-black.bg-white {
+        a[href="/slides"].btn-fill-custom.text-white.bg-o-color-2 {
             position: relative;
             overflow: hidden;
             z-index: 1;
             transition: color 0.5s ease !important;
             border: none !important; /* Remove border */
+        }
+
+        a[href="/jobs"].btn-fill-custom.text-black.bg-white {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.5s ease !important;
+            outline: 2px solid white !important;
+            outline-offset: -2px !important;
         }
 
         /* Pseudo-element for the fill effect */
@@ -51,7 +59,7 @@
 
         /* Contact Us button - orange fill on hover */
         a[href="/jobs"].btn-fill-custom.text-black.bg-white::before {
-            background: #111827; /* Orange fill on hover */
+            background: white; /* Orange fill on hover */
         }
 
         /* Hover effect - fill from bottom to top */
@@ -66,7 +74,7 @@
         }
 
         a[href="/jobs"].btn-fill-custom.text-black.bg-white:hover {
-            color: white !important; /* White text when white button has orange fill */
+            color: #1A202C !important; /* White text when white button has orange fill */
         }
         
 
@@ -791,4 +799,114 @@
         max-width: 480px;
         min-height: auto; /* Allow natural height on mobile */
     }
+    }
+
+
+
+
+
+ /* =========== LOGIN PAGE =========== */
+
+    /* More specific selectors for header/footer */
+    body:has(.oe_login_form) header,
+    body:has(.oe_website_login_container) nav,
+    body:has(.oe_website_login_container) footer,
+    .o_header_outer,
+    .oe_website_login_container .o_header,
+    .oe_website_login_container .o_footer {
+        display: none !important;
+    }
+
+    /* Remove any padding/margin that might push content down */
+    .oe_website_login_container {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    /* Center the login container and apply background */
+    .oe_website_login_container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 100vh !important;
+        background-color: white !important;
+        padding: 20px !important;
+    }
+
+    /* Style the login card - FORCE WIDTH */
+    .oe_website_login_container .card {
+        background-color: #F6F4FF !important;
+        border: none !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 12px !important;
+        width: 375px !important;
+        padding: 30px !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Center the card content */
+    .oe_website_login_container .card-body {
+        text-align: center !important;
+        padding: 2rem !important;
+    }
+
+    /* Center form elements */
+    .oe_login_form {
+        width: 100% !important;
+    }
+
+    /* Center the logo */
+    .oe_website_login_container .card-body img {
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    /* Center alerts and messages */
+    .oe_website_login_container .alert {
+        text-align: center !important;
+        border-radius: 8px !important;
+    }
+
+    /* =========== RESPONSIVE MEDIA QUERIES =========== */
+
+    /* Tablets and small screens */
+    @media (max-width: 768px) {
+        .oe_website_login_container .card {
+            width: 350px !important;
+            padding: 25px !important;
+        }
+    }
+
+    /* Mobile phones */
+    @media (max-width: 576px) {
+        .oe_website_login_container {
+            padding: 15px !important;
+        }
+        
+        .oe_website_login_container .card {
+            width: 100% !important;
+            max-width: 320px !important;
+            padding: 20px !important;
+        }
+    }
+
+    /* Very small phones */
+    @media (max-width: 375px) {
+        .oe_website_login_container {
+            padding: 10px !important;
+        }
+        
+        .oe_website_login_container .card {
+            max-width: 280px !important;
+            padding: 15px !important;
+        }
     }

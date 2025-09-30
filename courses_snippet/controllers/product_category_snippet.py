@@ -15,11 +15,11 @@ class WebsiteProduct(http.Controller):
             [('parent_id', '=', False)], fields=['name', 'image_1920', 'id']
         ) """
 
-        featured_course = request.env['slide.channel'].sudo().search_read(
+        featured_courses = request.env['slide.channel'].sudo().search_read(
             [('is_featured', '=', True)], fields=['name', 'image_1920', 'id', 'featured_description', 'total_time']
         )
 
         values = {
-            'courses': featured_course,
+            'courses': featured_courses,
         }
         return values
