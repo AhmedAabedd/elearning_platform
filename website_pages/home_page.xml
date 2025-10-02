@@ -112,11 +112,11 @@
             <section class="s_features pt64 pb64 o_colored_level" data-snippet="s_features" data-name="Features">
                 <div class="container">
                     <div class="row o_grid_mode" data-row-count="9">
-                        <div class="o_colored_level o_grid_item g-col-lg-6 g-height-3 col-lg-6" style="z-index: 5; grid-area: 1 / 4 / 4 / 10;">
+                        <div class="o_colored_level o_grid_item g-col-lg-6 g-height-3 col-lg-6 order-lg-0" style="z-index: 5; grid-area: 1 / 4 / 4 / 10; order: 0;">
                             <h3 style="text-align: center;">Affordable Online Courses and Learning Opportunities</h3>
                             <p class="lead" style="text-align: center;">List and describe the key features of your solution or service.</p>
                         </div>
-                        <div class="o_colored_level o_grid_item g-col-lg-3 rounded g-height-5 col-lg-3 o_cc o_cc4" style="z-index: 3; grid-area: 5 / 4 / 10 / 7; background-color: rgba(123, 63, 242, 0.18); border-radius: 10px !important; --grid-item-padding-x: 20px; --grid-item-padding-y: 20px;">
+                        <div class="o_colored_level o_grid_item g-col-lg-3 rounded g-height-5 col-lg-3 o_cc o_cc4 order-lg-0" style="z-index: 3; grid-area: 5 / 4 / 10 / 7; background-color: rgba(123, 63, 242, 0.18); --grid-item-padding-x: 20px; --grid-item-padding-y: 20px; border-radius: 10px !important; order: 2;">
                             <i class="fa fa-rocket s_features_icon mb-3 rounded mx-auto d-block text-o-color-4" role="img" style="background-color: rgb(156, 0, 255);"/>
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">
@@ -128,14 +128,14 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3" style="z-index: 2; --grid-item-padding-x: 20px; grid-area: 5 / 1 / 10 / 4; --grid-item-padding-y: 20px;">
+                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 2; --grid-item-padding-x: 20px; grid-area: 5 / 1 / 10 / 4; --grid-item-padding-y: 20px; order: 1;">
                             <i class="fa fa-group s_features_icon mb-3 mx-auto d-block text-o-color-4 rounded" role="img" style="background-color: rgb(0, 146, 214);"/>
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">Peers</h3>
                                 <p style="text-align: center;">Learn directly from students who already aced these courses — we know exactly what professors want.</p>
                             </div>
                         </div>
-                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 7 / 10 / 10; --grid-item-padding-y: 20px;">
+                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 7 / 10 / 10; --grid-item-padding-y: 20px; order: 3;">
                             <i class="fa fa-dollar s_features_icon mb-3 mx-auto d-block text-o-color-4 rounded" role="img" style="background-color: rgb(47, 188, 26);"/>
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">Value</h3>
@@ -143,7 +143,7 @@
                                 <p/>
                             </div>
                         </div>
-                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 10 / 10 / 13; --grid-item-padding-y: 20px;">
+                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 10 / 10 / 13; --grid-item-padding-y: 20px; order: 4;">
                             <i class="fa fa-comments s_features_icon mb-3 mx-auto d-block text-o-color-4 rounded bg-o-color-2" role="img"/>
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">Clarity</h3>
@@ -243,7 +243,7 @@
                         <br/>
                     </p>
                 </div>
-            </section><section class="s_title o_colored_level pb0 d-none o_snippet_mobile_invisible pt40 d-lg-block" data-vcss="001" data-snippet="s_title" data-name="Title" data-invisible="1" style="background-color: rgb(246, 244, 255);">
+            </section><section class="s_title o_colored_level pb0 pt40" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-color: rgb(246, 244, 255);">
                 <div class="s_allow_columns container">
                     <p>
                         <br/>
@@ -427,7 +427,7 @@
             <section class="s_key_benefits pb48 o_colored_level pt104" data-snippet="s_key_benefits" data-name="Key benefits">
                 <div class="container">
                     <div class="row s_nb_column_fixed o_grid_mode" data-row-count="24">
-                        <div class="o_colored_level o_grid_item g-height-6 g-col-lg-8 col-lg-8" style="grid-area: 1 / 1 / 7 / 9; z-index: 1;">
+                        <div class="o_colored_level o_grid_item g-height-6 g-col-lg-8 col-lg-8 order-lg-0" style="grid-area: 1 / 1 / 7 / 9; z-index: 1; order: 0;">
                             <p class="lead">
                                 <span class="s_badge badge text-bg-secondary o_animable" data-name="Badge" data-vxml="001" data-snippet="s_badge">
                                     <span style="font-weight: normal; font-size: 0.875rem;">✽&amp;nbsp;&amp;nbsp;What We Offer</span>
@@ -463,24 +463,24 @@
                             </p>
                         </div>
                         
-                        <div class="o_colored_level o_grid_item rounded g-height-2 g-col-lg-5 col-lg-5" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 8 / 6 / 10 / 11; border-radius: 30px !important;">
+                        <div class="o_colored_level o_grid_item rounded g-height-2 g-col-lg-5 col-lg-5 order-lg-0" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 8 / 6 / 10 / 11; border-radius: 30px !important; order: 1;">
                             <h3>Be our student and improve your exam results</h3>
                         </div>
-                        <div class="o_colored_level o_grid_item rounded g-height-5 g-col-lg-7 col-lg-7" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 10 / 6 / 15 / 13; border-radius: 30px !important;">
+                        <div class="o_colored_level o_grid_item rounded g-height-5 g-col-lg-7 col-lg-7 order-lg-0" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 10 / 6 / 15 / 13; border-radius: 30px !important; order: 3;">
                             <p>As a student on E-Stic, you get access to clear, exam-focused explanations made by peers who excelled in the same subjects.</p>
                             <p>You’ll be able to learn at your own rhythm, revisit lessons whenever you need, and gain confidence for your exams.</p>
                             <p>With every course, you’re not only preparing smarter, but also joining a community where your feedback helps make learning even better.</p><p style="text-align: left;"><a class="btn btn-fill-custom text-o-color-1 rounded-circle" href="/slides" style="border-width: 0px; border-style: solid; border-color: rgb(123, 63, 242); background-color: rgba(255, 0, 0, 0);">Get Started​​​​​​ now&amp;nbsp; <span class="fa fa-chevron-right"/>​​​​</a></p>
                         </div>
-                        <div class="o_colored_level o_grid_item rounded g-col-lg-6 g-height-2 col-lg-6" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; border-radius: 30px !important; grid-area: 17 / 1 / 19 / 7;">
+                        <div class="o_colored_level o_grid_item rounded g-col-lg-6 g-height-2 col-lg-6 order-lg-0" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 17 / 1 / 19 / 7; border-radius: 30px !important; order: 4;">
                             <h3>Become a teacher and turn your knowledge into income</h3>
                         </div>
                         
-                        <div class="o_colored_level o_grid_item rounded g-col-lg-7 g-height-6 col-lg-7" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 19 / 1 / 25 / 8; border-radius: 30px !important;">
+                        <div class="o_colored_level o_grid_item rounded g-col-lg-7 g-height-6 col-lg-7 order-lg-0" style="z-index: 0; background-color: rgba(246, 244, 255, 0); --grid-item-padding-x: 30px; grid-area: 19 / 1 / 25 / 8; border-radius: 30px !important; order: 6;">
                             <p>As a teacher on E-Stic, you can share your knowledge with fellow students and help them succeed in their exams.</p>
                             <p>You’ll be able to create and publish courses easily, reach a wide community of learners, and get rewarded for your efforts.</p>
                             <p>Teaching with us is not only a way to earn, but also a chance to build your reputation, improve your skills, and make a real impact on your peers’ academic journey.</p><p style="text-align: left;"><a class="btn btn-fill-custom text-o-color-1 bg-o-color-1 rounded-circle" href="/jobs" style="border-width: 0px; border-style: solid; border-color: rgb(123, 63, 242);">Be​​come a Tea​​cher&amp;nbsp; <span class="fa fa-briefcase"/></a></p>
                         </div>
-                    <div class="o_colored_level o_grid_item g-height-8 g-col-lg-4 col-lg-4 rounded" style="z-index: 2; background-color: rgb(246, 244, 255); --grid-item-padding-y: 30px; --grid-item-padding-x: 0px; border-radius: 30px !important; grid-area: 7 / 1 / 15 / 5;">
+                    <div class="o_colored_level o_grid_item g-height-8 g-col-lg-4 col-lg-4 rounded order-lg-0" style="z-index: 2; background-color: rgb(246, 244, 255); --grid-item-padding-y: 30px; --grid-item-padding-x: 0px; grid-area: 7 / 1 / 15 / 5; border-radius: 30px !important; order: 2;">
                             <span class="display-3-fs text-o-color-1">
                                 <span class="fa fa-mortar-board mx-auto d-block fa-2x" style="padding: 20px; background-color: rgba(123, 63, 242, 0);"/></span>
                             <section class="s_embed_code pt0 pb0 text-center" data-snippet="s_embed_code" data-name="Embed Code">
@@ -582,7 +582,7 @@
                             <p style="text-align: center;">
                                 <br/>
                             </p>
-                        </div><div class="o_colored_level o_grid_item g-col-lg-4 rounded g-height-8 col-lg-4" style="z-index: 2; background-color: rgb(246, 244, 255); --grid-item-padding-y: 30px; --grid-item-padding-x: 0px; border-radius: 30px !important; grid-area: 16 / 9 / 24 / 13;">
+                        </div><div class="o_colored_level o_grid_item g-col-lg-4 rounded g-height-8 col-lg-4 order-lg-0" style="z-index: 2; background-color: rgb(246, 244, 255); --grid-item-padding-y: 30px; --grid-item-padding-x: 0px; grid-area: 16 / 9 / 24 / 13; border-radius: 30px !important; order: 5;">
                             <span class="display-3-fs text-o-color-1">
                                 <span class="fa fa-briefcase mx-auto d-block fa-2x" style="padding: 20px; background-color: rgba(123, 63, 242, 0);"/></span>
                             
@@ -739,25 +739,25 @@
                     <div class="row gap-4 gap-lg-0 o_grid_mode" data-row-count="17">
                         <div class="o_grid_item g-height-11 g-col-lg-12 col-lg-12 order-lg-0" style="z-index: 1; grid-area: 7 / 1 / 18 / 13; order: 1;">
                             <div class="mb-4">
-                                <section class="s_embed_code text-center pt0 pb0" data-snippet="s_embed_code" data-name="Embed Code">
+                                <section class="s_embed_code pt0 pb0 text-center" data-snippet="s_embed_code" data-name="Embed Code">
                                     <template class="s_embed_code_saved"><div class="pricing-cards">
                                             <div class="pricing-card">
                                                 <h3>1 Course</h3>
                                                 <p class="price">40 DT</p>
                                                 <p class="desc">Perfect for focused revision on a single subject.</p>
-                                                <a href="#" class="btn-pricing">Get Started</a>
+                                                <a href="/slides" class="btn-pricing">Get Started</a>
                                             </div>
                                             <div class="pricing-card highlight">
                                                 <h3>3 Courses</h3>
                                                 <p class="price">100 DT</p>
                                                 <p class="desc">Best for a few subjects — great savings per course.</p>
-                                                <a href="/custom" class="btn-pricing">Get Started</a>
+                                                <a href="/slides" class="btn-pricing">Get Started</a>
                                             </div>
                                             <div class="pricing-card">
                                                 <h3>5+ Courses</h3>
                                                 <p class="price">150 DT</p>
                                                 <p class="desc">Maximum value for multiple courses — ideal for exam season.</p>
-                                                <a href="#" class="btn-pricing">Get Started</a>
+                                                <a href="/slides" class="btn-pricing">Get Started</a>
                                             </div>
                                         </div></template>
                                     <div class="s_embed_code_embedded container o_not_editable"><div class="pricing-cards">
@@ -765,19 +765,19 @@
                                                 <h3>1 Course</h3>
                                                 <p class="price">40 DT</p>
                                                 <p class="desc">Perfect for focused revision on a single subject.</p>
-                                                <a href="#" class="btn-pricing">Get Started</a>
+                                                <a href="/slides" class="btn-pricing">Get Started</a>
                                             </div>
                                             <div class="pricing-card highlight">
                                                 <h3>3 Courses</h3>
                                                 <p class="price">100 DT</p>
                                                 <p class="desc">Best for a few subjects — great savings per course.</p>
-                                                <a href="/custom" class="btn-pricing">Get Started</a>
+                                                <a href="/slides" class="btn-pricing">Get Started</a>
                                             </div>
                                             <div class="pricing-card">
                                                 <h3>5+ Courses</h3>
                                                 <p class="price">150 DT</p>
                                                 <p class="desc">Maximum value for multiple courses — ideal for exam season.</p>
-                                                <a href="#" class="btn-pricing">Get Started</a>
+                                                <a href="/slides" class="btn-pricing">Get Started</a>
                                             </div>
                                         </div></div>
                                 </section>
