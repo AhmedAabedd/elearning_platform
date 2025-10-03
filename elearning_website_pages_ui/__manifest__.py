@@ -12,6 +12,7 @@
     ],
     "data": [
         'views/home.xml',
+        'views/courses.xml',
         'views/home_templates.xml'
     ],
     'assets': {

@@ -101,6 +101,28 @@
         }
     }
 
+    /* iPad Pro (1024px - 1199px) */
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        .o_grid_item.d-flex a.btn {
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+            min-height: 46px;
+            min-width: 200px; /* Force minimum width */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+        
+        .o_grid_item.d-flex a.btn .fa {
+            font-size: 0.9rem;
+        }
+        
+        .o_grid_item.d-flex a.btn span {
+            font-size: 1rem !important;
+        }
+    }
+
     /* Tablets (<= 992px) */
     @media (max-width: 992px) {
         .o_grid_item.d-flex a.btn {
