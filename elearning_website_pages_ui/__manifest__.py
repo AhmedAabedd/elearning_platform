@@ -19,6 +19,7 @@
             'elearning_website_pages_ui/static/src/css/home.css',
             'elearning_website_pages_ui/static/src/css/courses.css',
             'elearning_website_pages_ui/static/src/css/signin.css',
+            'elearning_website_pages_ui/static/src/css/contact_us.css',
         ],
     },
 

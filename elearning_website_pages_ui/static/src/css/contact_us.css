@@ -1,0 +1,30 @@
+/* Contact Form Input Styling - More Specific */
+#wrap .s_website_form_rows .s_website_form_input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid #374151 !important;
+    color: white !important;
+}
+
+#wrap .s_website_form_rows .s_website_form_input::placeholder {
+    color: #9ca3af !important;
+}
+
+#wrap .s_website_form_rows .s_website_form_input:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #7B3FF2 !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+/* Textarea specific styling */
+#wrap .s_website_form_rows textarea.s_website_form_input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid #374151 !important;
+    color: white !important;
+    resize: vertical;
+}
+
+/* Contact Form Submit Button Hover */
+#wrap .s_website_form_send:hover {
+    filter: none;
+}
