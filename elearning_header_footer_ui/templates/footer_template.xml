@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+   <template id="custom_footer" inherit_id="website.layout">
+       <xpath expr="//div[@id='footer']" position="replace">
+           <div id="footer" class="custom-footer" t-ignore="true" t-if="not no_footer">
+               <div class="footer-content">
+                   <div class="container">
+                       <!-- Second Row: Contact Info -->
+                       <div class="row contact-row">
+                           <div class="col-12 col-sm-6 col-md-3 mb-3">
+                               <div class="contact-item text-center">
+                                   <h6>How can we help ?</h6>
+                                   <p class="contact-text">Contact us anytime</p>
+                               </div>
+                           </div>
+                           <div class="col-12 col-sm-6 col-md-3 mb-3">
+                               <div class="contact-item text-center">
+                                   <h6>Call us</h6>
+                                   <p class="contact-text">+216 97 187 383<br/>+216 55 626 623</p>
+                               </div>
+                           </div>
+                           <div class="col-12 col-sm-6 col-md-3 mb-3">
+                               <div class="contact-item text-center">
+                                   <h6>Send us a message</h6>
+                                   <p class="contact-text">estic@learning.com</p>
+                               </div>
+                           </div>
+                           <div class="col-12 col-sm-6 col-md-3 mb-3">
+                               <div class="contact-item text-center">
+                                   <h6>Follow us</h6>
+                                   <div class="social-icons">
+                                       <a href="#" class="social-icon"><i class="fa fa-facebook"/></a>
+                                       <a href="#" class="social-icon"><i class="fa fa-twitter"/></a>
+                                       <a href="#" class="social-icon"><i class="fa fa-linkedin"/></a>
+                                       <a href="#" class="social-icon"><i class="fa fa-instagram"/></a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <!-- Separator -->
+                       <div class="row">
+                           <div class="col-12">
+                               <hr class="footer-separator"/>
+                           </div>
+                       </div>
+
+                       <!-- Third Row: Logo and Back to Top -->
+                       <div class="row logo-row">
+                           <div class="col-12 position-relative">
+                               <div class="logo-container text-center">
+                                   <h1 class="display-3 footer-logo">
+                                       <span class="logo-e">E</span><span class="logo-text">-Stic</span>
+                                   </h1>
+                               </div>
+                               <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                                   <i class="fa fa-chevron-up"/>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </xpath>
+   </template>
+</odoo>

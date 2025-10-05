@@ -13,12 +13,12 @@
     "data": [
         'views/home.xml',
         'views/courses.xml',
-        'views/home_templates.xml'
     ],
     'assets': {
         'web.assets_frontend': [
             'elearning_website_pages_ui/static/src/css/home.css',
             'elearning_website_pages_ui/static/src/css/courses.css',
+            'elearning_website_pages_ui/static/src/css/signin.css',
         ],
     },
 

@@ -1,0 +1,169 @@
+/* =========== LOGIN PAGE =========== */
+
+    /* More specific selectors for header/footer */
+    body:has(.oe_login_form) header,
+    body:has(.oe_website_login_container) nav,
+    body:has(.oe_website_login_container) footer,
+    .o_header_outer,
+    .oe_website_login_container .o_header,
+    .oe_website_login_container .o_footer {
+        display: none !important;
+    }
+
+    /* Remove any padding/margin that might push content down */
+    .oe_website_login_container {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    /* Center the login container and apply background */
+    .oe_website_login_container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 100vh !important;
+        background-color: white !important;
+        padding: 20px !important;
+    }
+
+    /* Style the login card - FORCE WIDTH */
+    .oe_website_login_container .card {
+        background-color: #F6F4FF !important;
+        border: none !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 12px !important;
+        width: 375px !important;
+        padding: 30px !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Center the card content */
+    .oe_website_login_container .card-body {
+        text-align: center !important;
+        padding: 2rem !important;
+    }
+
+    /* Center form elements */
+    .oe_login_form {
+        width: 100% !important;
+    }
+
+    /* Center the logo */
+    .oe_website_login_container .card-body img {
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    /* Center alerts and messages */
+    .oe_website_login_container .alert {
+        text-align: center !important;
+        border-radius: 8px !important;
+    }
+
+    /* =========== RESPONSIVE MEDIA QUERIES =========== */
+
+    /* Tablets and small screens */
+    @media (max-width: 768px) {
+        .oe_website_login_container .card {
+            width: 350px !important;
+            padding: 25px !important;
+        }
+    }
+
+    /* Mobile phones */
+    @media (max-width: 576px) {
+        .oe_website_login_container {
+            padding: 15px !important;
+        }
+        
+        .oe_website_login_container .card {
+            width: 100% !important;
+            max-width: 320px !important;
+            padding: 20px !important;
+        }
+    }
+
+    /* Very small phones */
+    @media (max-width: 375px) {
+        .oe_website_login_container {
+            padding: 10px !important;
+        }
+        
+        .oe_website_login_container .card {
+            max-width: 280px !important;
+            padding: 15px !important;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* =========== SIGNUP PAGE =========== */
+
+    /* Style the signup form to match login card */
+    .oe_signup_form {
+        background-color: #F6F4FF !important;
+        border: none !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 12px !important;
+        width: 375px !important;
+        padding: 30px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    /* Center form elements but keep text left-aligned */
+    .oe_signup_form .form-control {
+        text-align: left !important; /* Change this back to left */
+        margin-bottom: 1rem !important;
+    }
+
+    /* Center labels */
+    .oe_signup_form .form-label {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Center buttons and links */
+    .oe_signup_form .oe_login_buttons {
+        text-align: center !important;
+    }
+
+    /* Center alerts */
+    .oe_signup_form .alert {
+        text-align: center !important;
+        border-radius: 8px !important;
+    }
+
+    /* Increase bottom margin for signup button */
+    .oe_signup_form .btn-primary {
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Dark background for signup page 
+    .oe_website_login_container {
+        background-color: #111827 !important;
+    }*/

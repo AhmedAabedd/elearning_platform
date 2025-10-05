@@ -13,10 +13,12 @@
     "data": [
         "templates/remove_footer_watermark.xml",
         "templates/navbar.xml",
+        "templates/footer_template.xml",
     ],
     'assets': {
         'web.assets_frontend': [
             'elearning_header_footer_ui/static/src/scss/navbar.css',
+            'elearning_header_footer_ui/static/src/scss/footer.css',
         ],
     },
 
