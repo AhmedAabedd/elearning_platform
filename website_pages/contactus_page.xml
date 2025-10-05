@@ -95,7 +95,12 @@
                                     <i class="fa fa-1x fa-fw fa-envelope me-2"/>info@yourcompany.example.com
                                 
                                 </li>
-                            </ul>
+                            </ul><div class="s_social_media o_not_editable text-start" data-snippet="s_social_media" data-name="Social Media">
+        <h4 class="s_social_media_title o_default_snippet_text d-none">Social Media</h4>
+<a target="_blank" href="/website/social/facebook" class="s_social_media_facebook" aria-label="Facebook"><i class="fa o_editable_media fa-facebook rounded-empty-circle shadow-sm text-o-color-2"/></a>
+<a target="_blank" href="/website/social/instagram" class="s_social_media_instagram" aria-label="Instagram"><i class="fa o_editable_media fa-instagram rounded-empty-circle shadow-sm text-o-color-2"/></a>
+<a target="_blank" href="/website/social/youtube" class="s_social_media_youtube" aria-label="YouTube"><i class="fa o_editable_media rounded-empty-circle shadow-sm text-o-color-2 fa-youtube"/></a>
+</div>
                         </div>
                     </div>
                 </div>

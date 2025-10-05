@@ -28,3 +28,60 @@
 #wrap .s_website_form_send:hover {
     filter: none;
 }
+
+
+
+
+
+
+
+
+/* Company Contact Info Styling */
+#wrap .o_colored_level h5 {
+    color: #F79F24 !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+}
+
+#wrap .o_colored_level .list-unstyled li {
+    color: #e5e7eb !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 0.95rem !important;
+}
+
+#wrap .o_colored_level .list-unstyled li i {
+    color: #F79F24 !important;
+    width: 16px !important;
+}
+
+#wrap .o_colored_level .list-unstyled li .o_force_ltr {
+    color: #e5e7eb !important;
+}
+
+
+
+
+
+
+/* Social Media Icons Hover Effect */
+#wrap .s_social_media a {
+    transition: all 0.3s ease !important;
+}
+
+#wrap .s_social_media a:hover {
+    transform: translateY(-3px) !important;
+    text-decoration: none;
+}
+
+#wrap .s_social_media_facebook:hover i {
+    color: #1877F2 !important;
+}
+
+#wrap .s_social_media_instagram:hover i {
+    color: #ff00dd !important;
+}
+
+#wrap .s_social_media_youtube:hover i {
+    color: #FF0000 !important;
+}
