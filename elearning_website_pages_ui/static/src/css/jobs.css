@@ -1,0 +1,101 @@
+/* ========== JOBS PAGE ========== */
+
+    /* Remove top border from jobs page navbar */
+    .o_website_hr_recruitment_jobs_list nav.navbar {
+        border-top: none !important;
+        padding-top: 40px;
+    }
+
+    /* Style "Our Job Offers" text */
+    .o_website_hr_recruitment_jobs_list .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+
+
+    /* Proposal Section Styles */
+    .proposal-icon {
+        font-size: 6rem;
+        color: #F79F24;
+        background-color: rgba(247, 159, 36, 0.1);
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px auto; /* This centers the icon */
+        border: 10px solid rgba(247, 159, 36, 0.2);
+    }
+
+    .proposal-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .proposal-btn {
+        display: block;
+        margin: 30px auto;
+        width: fit-content;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: color 0.5s ease !important;
+        filter: none !important;
+        border: none;
+    }
+
+    /* Remove odoo default hover effect */
+    .proposal-btn:hover {
+        filter: none !important;
+        background-color: #7B3FF2;
+    }
+
+    .proposal-btn::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        width: 120%;
+        height: 250%;
+        transition: top 0.5s ease;
+        z-index: -1;
+        border-radius: 50% 50% 30% 30%;
+        background: #111827;
+    }
+
+    .proposal-btn:hover::before {
+        top: -50%;
+    }
+
+    #jobs_grid_right .s_social_media a {
+        transition: all 0.3s ease !important;
+    }
+
+    #jobs_grid_right .s_social_media a:hover {
+        transform: translateY(-3px) !important;
+        text-decoration: none;
+    }
+
+    #jobs_grid_right .s_social_media_facebook:hover i {
+        color: #1877F2 !important;
+        border-color: #1877F2 !important;;
+    }
+
+    #jobs_grid_right .s_social_media_instagram:hover i {
+        color: #ff00dd !important;
+        border-color: #ff00dd !important;
+    }
+
+    #jobs_grid_right .s_social_media_youtube:hover i {
+        color: #FF0000 !important;
+        border-color: #FF0000 !important;;
+    }
+
+
+/* ========== JOB POSITION PAGE ========== */
+
+    /* Remove the underline text on hover effect */
+    nav.navbar span.navbar-brand a {
+        text-decoration: none;
+    }

@@ -13,6 +13,8 @@
     "data": [
         'views/home.xml',
         'views/courses.xml',
+        'views/jobs.xml',
+        'views/job_position.xml',
     ],
     'assets': {
         'web.assets_frontend': [
@@ -20,6 +22,7 @@
             'elearning_website_pages_ui/static/src/css/courses.css',
             'elearning_website_pages_ui/static/src/css/signin.css',
             'elearning_website_pages_ui/static/src/css/contact_us.css',
+            'elearning_website_pages_ui/static/src/css/jobs.css',
         ],
     },
 

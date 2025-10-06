@@ -596,7 +596,7 @@
     /* === Styling Buttons === */
 
     /* Initial style */
-    a[href="/custom"].btn-fill-custom.bg-o-color-1,
+    a[href="/contactus#propose-form"].btn-fill-custom.bg-o-color-1,
     a[href="/jobs"].btn-fill-custom.bg-o-color-1 {
         background-color: #7B3FF2 !important;
         color: white !important;
@@ -608,7 +608,7 @@
     }
 
     /* Pseudo-element for curved fill effect */
-    a[href="/custom"].btn-fill-custom.bg-o-color-1::before,
+    a[href="/contactus#propose-form"].btn-fill-custom.bg-o-color-1::before,
     a[href="/jobs"].btn-fill-custom.bg-o-color-1::before {
         content: "";
         position: absolute;
@@ -623,13 +623,13 @@
     }
 
     /* Reset Odoo hover */
-    a[href="/custom"].btn-fill-custom.bg-o-color-1:hover,
+    a[href="/contactus#propose-form"].btn-fill-custom.bg-o-color-1:hover,
     a[href="/jobs"].btn-fill-custom.bg-o-color-1:hover {
         filter: none !important;
     }
 
     /* Hover animation */
-    a[href="/custom"].btn-fill-custom.bg-o-color-1:hover::before,
+    a[href="/contactus#propose-form"].btn-fill-custom.bg-o-color-1:hover::before,
     a[href="/jobs"].btn-fill-custom.bg-o-color-1:hover::before {
         top: -50%;
     }

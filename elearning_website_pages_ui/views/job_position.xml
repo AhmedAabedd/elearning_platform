@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Add previous icon to the link -->
+    <template id="custom_jobs_header" name="Custom Jobs Header" inherit_id="website_hr_recruitment.detail">
+        <xpath expr="//nav[contains(@class, 'navbar')]//span[contains(@class, 'navbar-brand')]//a" position="replace">
+            <a href="/jobs" class="text-white">
+                <i class="fa fa-arrow-left me-2"/>All Jobs
+            </a>
+        </xpath>
+    </template>
+
+</odoo>
