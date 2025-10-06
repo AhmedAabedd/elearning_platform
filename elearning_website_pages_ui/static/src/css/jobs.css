@@ -11,6 +11,12 @@
         font-size: 1.5rem !important;
     }
 
+    /* Change background color */
+    .o_website_hr_recruitment_jobs_list,
+    .js_hr_recruitment {
+        background-color: #F6F4FF !important;
+    }
+
 
 
     /* Proposal Section Styles */
