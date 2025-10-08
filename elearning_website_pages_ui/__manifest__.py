@@ -15,6 +15,8 @@
         'views/courses.xml',
         'views/jobs.xml',
         'views/job_position.xml',
+        'views/contact_us.xml',
+        'views/sign_in.xml',
     ],
     'assets': {
         'web.assets_frontend': [
