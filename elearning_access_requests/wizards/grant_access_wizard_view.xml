@@ -11,9 +11,13 @@
                 </div>
                 <div invisible="sale_problem == 'no'">
                     <p>User has no confirmed sale order containing the access for this course !</p>
+                    <group>
+                        <field name="order_id"/>
+                    </group>
                 </div>
                 <footer>
                     <button name="action_create_sale_order" string="Create Sale Order" type="object" class="btn-primary" invisible="sale_problem == 'no_confirm'"/>
+                    <button name="action_confirm_order_grant_access" string="Confirm Order &amp; Grant Access" type="object" class="btn-primary" invisible="sale_problem == 'no'"/>
                     <button name="action_confirm_grant_access" string="Grant Access Anyway" type="object" class="btn-outline-success"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                 </footer>

@@ -22,7 +22,7 @@ class MailActivity(models.Model):
                 
                 sale_order = self.env['sale.order'].search([
                     ('partner_id', '=', activity.request_partner_id.id)
-                ]).filtered(lambda so: channel.product_template_id in so.order_line.mapped('product_template_id'))
+                ], limit=1).filtered(lambda so: channel.product_template_id in so.order_line.mapped('product_template_id'))
 
                 if sale_order:
                     activity.partner_sale_done = 'no_confirm'
@@ -33,6 +33,7 @@ class MailActivity(models.Model):
         self.ensure_one()
         if self.res_model == 'slide.channel' and self.res_id and self.request_partner_id:
             channel = self.env['slide.channel'].browse(self.res_id)
+            #res_id relational field contains the slide.channel(course)
 
             return {
                 'type': 'ir.actions.act_window',
