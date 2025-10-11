@@ -11,10 +11,11 @@ class ProductTemplate(models.Model):
     is_course_access = fields.Boolean(string="Course Access", default=False)
 
 
-    @api.model
-    def create(self, vals):
-        if vals.get("is_course_access"):  #return none if is_course_access doesnt exist in the dict vals
-            vals['name'] = f"(Course Access) {vals['name']}"
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get("is_course_access"):  #return none if is_course_access doesnt exist in the dict vals
+                vals['name'] = f"(Course Access) {vals['name']}"
             
         rec = super().create(vals)
         return rec
