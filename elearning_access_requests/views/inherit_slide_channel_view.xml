@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     
-    <!-- Inherit the course form view to add price field -->
+    <!-- Inherit the course form view to add requests smart button -->
     <record id="view_slide_channel_form_inherit" model="ir.ui.view">
         <field name="name">slide.channel.form.inherit</field>
         <field name="model">slide.channel</field>
@@ -13,6 +13,25 @@
                 <button class="oe_stat_button" type="object" name="action_view_access_requests" icon="fa-envelope" invisible="enroll != 'invite'">
                     <field name="request_count" string="Requests" widget="statinfo"/>
                 </button>
+
+            </xpath>
+
+        </field>
+    </record>
+
+    <!-- Replace the ivited field by the requests field -->
+    <record id="view_slide_channel_kanban_inherit" model="ir.ui.view">
+        <field name="name">slide.channel.kanban.inherit</field>
+        <field name="model">slide.channel</field>
+        <field name="inherit_id" ref="website_slides.slide_channel_view_kanban"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//a[@name='action_redirect_to_invited_members']" position="replace">
+
+                <a name="action_redirect_to_invited_members" type="object" class="d-flex flex-column align-items-center col-3 border-end">
+                    <field name="request_count" class="fw-bold"/>
+                    <span class="text-muted text-truncate mw-100" title="Requests">Requests</span>
+                </a>
 
             </xpath>
 
