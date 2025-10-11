@@ -14,3 +14,87 @@
 .o_wslides_lesson_header .progress-bar {
     background-color: #22c55e !important; /* Your purple color */
 }
+
+
+
+
+/* =========== FULL SCREEN MODE =========== */
+
+/* Fullscreen HEADER */
+    .o_wslides_fs_main .o_wslides_slide_fs_header {
+        background: #7B3FF2 !important;
+        padding: 10px 0;
+    }
+
+    /* Header Links - Enhanced Shape & Spacing */
+    .o_wslides_fs_main .o_wslides_slide_fs_header a {
+        color: white !important;
+        padding: 8px 16px !important;
+        border-radius: 6px;
+        margin: 0 4px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    /* buttons hover */
+    .o_wslides_fs_main .o_wslides_slide_fs_header a:hover {
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    /* Content Area */
+    .o_wslides_fs_content {
+        background: #1F1147 !important;
+    }
+
+
+/* Fullscreen SIDEBAR */
+    .o_wslides_fs_sidebar {
+        background: #2D1B69 !important;
+    }
+
+    /* Progress Bar */
+        .o_wslides_fs_main .progress {
+            background: rgba(255, 255, 255, 0.2) !important;
+        }
+
+        .o_wslides_fs_main .progress-bar {
+            background: #22C55E !important;
+        }
+
+    /* Current Slide - Match Button Hover */
+        .o_wslides_fs_sidebar_list_item.active {
+            background: rgba(255, 255, 255, 0.1) !important;
+            margin: 2px 0;
+        }
+
+        .o_wslides_fs_sidebar_list_item.active a {
+            color: white !important;
+            font-weight: 600;
+        }
+
+    .o_wslides_fs_sidebar .o_wslides_fs_sidebar_section .text-uppercase {
+        color: #D1D5DB !important;
+    }
+
+    .o_wslides_fs_sidebar .o_wslides_fs_sidebar_section .text-uppercase:hover {
+        color: white !important;
+    }
+
+    .o_wslides_fs_sidebar_list_item:hover:not(.active) {
+        background: rgba(255, 255, 255, 0.05) !important;
+    }
+
+    /* Quiz Items 
+    .o_wslides_fs_slide_quiz:hover {
+        color: #F59E0B !important;
+    }
+
+    Resource Links
+    .o_wslides_fs_slide_link {
+        color: #94A3B8 !important;
+        transition: color 0.2s ease;
+    }
+
+    .o_wslides_fs_slide_link:hover {
+        color: white !important;
+    }*/
