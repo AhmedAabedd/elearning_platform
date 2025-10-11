@@ -62,3 +62,16 @@ class SaleOrderLine(models.Model):
                         "Course access products must have a quantity of 1. "
                         f"Please set the quantity to 1 for '{line.product_template_id.name}'."
                     )
+                
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            # Check if product_id is being set and if it's a course access product
+            if vals.get('product_id'):
+                product = self.env['product.product'].browse(vals['product_id'])
+                if product.is_course_access:
+                    course = self.env['slide.channel'].search([('product_template_id', '=', product.id)])
+                    # Override the name with "Access to {product_name}"
+                    vals['name'] = f"Access to: {course.name}"
+        
+        return super().create(vals_list)
