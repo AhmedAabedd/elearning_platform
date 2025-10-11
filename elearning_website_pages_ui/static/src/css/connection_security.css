@@ -1,0 +1,32 @@
+/* Change Password button to primary */
+.o_portal_security_body button[type="submit"] {
+    background-color: #7B3FF2 !important;
+    color: white !important;
+}
+
+.o_portal_security_body button[type="submit"]:hover {
+    background-color: #8958ec !important;
+}
+
+/* Change Enable two-factor authentication button to light gray */
+.btn.btn-secondary#auth_totp_portal_enable {
+    background-color: #DEE2E6 !important;
+    border-color: #DEE2E6 !important;
+    color: dark !important;
+}
+
+.btn.btn-secondary#auth_totp_portal_enable:hover {
+    background-color: #babec2 !important;
+    border-color: #babec2 !important;
+}
+
+/* Log out from all devices button to danger */
+#portal_revoke_all_sessions_popup {
+    background-color: white !important;
+    border: 1px solid red !important;
+    color: red !important;
+}
+
+#portal_revoke_all_sessions_popup:hover {
+    background-color: rgba(255, 0, 0, 0.051) !important;
+}

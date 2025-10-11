@@ -17,6 +17,7 @@
         'views/job_position.xml',
         'views/contact_us.xml',
         #'views/sign_in.xml',
+        'views/connection_security.xml',
     ],
     'assets': {
         'web.assets_frontend': [
@@ -25,6 +26,7 @@
             'elearning_website_pages_ui/static/src/css/signin.css',
             'elearning_website_pages_ui/static/src/css/contact_us.css',
             'elearning_website_pages_ui/static/src/css/jobs.css',
+            'elearning_website_pages_ui/static/src/css/connection_security.css',
         ],
     },
 

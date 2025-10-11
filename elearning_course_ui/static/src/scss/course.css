@@ -90,4 +90,14 @@
 
 
 
-/* Replace THE_EXACT_CLASS with the actual class name from inspection */
+/* ========== COURSE POPUPS ========== */
+    /* Request access Popup */
+        /* Cancel button */
+        .o_dialog .btn-secondary {
+            background-color: transparent !important;
+            border-color: #DEE2E6 !important;
+        }
+
+        .o_dialog .btn-secondary:hover {
+            background-color: #DEE2E6 !important;
+        }

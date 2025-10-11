@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Remove info icon -->
+    <template id="remove_totp_info_icon" inherit_id="auth_totp_portal.totp_portal_hook" name="Remove TOTP Info Icon">
+        <xpath expr="//a[@target='_blank']/i[@class='fa fa-fw o_button_icon fa-info-circle']" position="replace"/>
+    </template>
+
+</odoo>
