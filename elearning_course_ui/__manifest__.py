@@ -17,6 +17,7 @@
     'assets': {
         'web.assets_frontend': [
             'elearning_course_ui/static/src/scss/course.css',
+            'elearning_course_ui/static/src/scss/lesson.css',
         ],
     },
 

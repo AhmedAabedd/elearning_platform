@@ -1,0 +1,16 @@
+/* Change Header background color */
+.o_wslides_lesson_header,
+.record_cover .oe_cover_blur,
+.record_cover .oe_cover_fade {
+    background-color: #7B3FF2 !important;
+}
+
+/* Change trophy icon color */
+.o_wslides_lesson_header .fa-trophy {
+    color: #F79F24 !important;
+}
+
+/* Change progressbar fill color */
+.o_wslides_lesson_header .progress-bar {
+    background-color: #22c55e !important; /* Your purple color */
+}
