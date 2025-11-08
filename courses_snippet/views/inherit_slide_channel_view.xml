@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     
-    <!-- Inherit the course form view to add price field -->
+    <!-- Inherit the course form view to add description field -->
     <record id="view_slide_channel_form_inherit" model="ir.ui.view">
         <field name="name">slide.channel.form.inherit</field>
         <field name="model">slide.channel</field>
