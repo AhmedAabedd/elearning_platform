@@ -194,6 +194,10 @@
 
     /* --- 1/ NAV LINKS --- */
 
+        .s_tabs .s_tabs_content {
+            margin-top: 50px !important;
+        }
+
         /* Default inactive nav links */
         .s_tabs .nav-link {
             color: rgb(114, 114, 114) !important;
