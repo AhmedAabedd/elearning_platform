@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <template id="featured_courses_template_highlight" name="Category Highlight">
+    <template id="featured_courses_template_highlight" name="Featured Courses">
         <section class="featured_courses_section">
             <div class="container">
                 <div class="alert alert-info">
-                    <h4>Your Category Highlight Tab snippet will be displayed here...
+                    <h4>Your Featured Courses snippet will be displayed here...
                         Please save to view the snippet
                     </h4>
                 </div>
@@ -13,7 +13,7 @@
         </section>
     </template>
 
-    <template id="category_highlight_snippet" inherit_id="website.snippets" name="Category Highlight Snippet">
+    <template id="category_highlight_snippet" inherit_id="website.snippets" name="Featured Courses Snippet">
         <xpath expr="//snippets[@id='snippet_groups']" position="inside">
             <t t-snippet="courses_snippet.featured_courses_template_highlight"
                t-thumbnail="/courses_snippet/static/src/images/snippets/student.png"/>

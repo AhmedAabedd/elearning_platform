@@ -1,0 +1,64 @@
+/* Job Description Responsive Styles */
+.job-description-section .lead {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+/* Fix for HTML content inside job description */
+.job-description-section .lead table {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.job-description-section .lead img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.job-description-section .lead iframe {
+    max-width: 100% !important;
+}
+
+.job-description-section .lead * {
+    max-width: 100% !important;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+    .job-description-section .lead {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+    
+    .job-description-section .lead table {
+        font-size: 14px !important;
+    }
+    
+    .job-description-section .lead td,
+    .job-description-section .lead th {
+        padding: 6px 8px !important;
+        white-space: normal !important;
+    }
+    
+    /* Ensure text doesn't overflow on mobile */
+    .job-description-section .lead {
+        overflow-x: hidden !important;
+    }
+}
+
+/* Skills section responsive improvements */
+@media (max-width: 576px) {
+    .skills-section .col-md-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .skills-section .card-body {
+        padding: 1rem !important;
+    }
+}

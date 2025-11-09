@@ -1,40 +1,33 @@
-/* Contact Form Input Styling - More Specific */
-#wrap .s_website_form_rows .s_website_form_input {
+/* Contact Form Input Styling - Specific to contact page only */
+#wrap .s_text_block .s_website_form_rows .s_website_form_input {
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid #374151 !important;
     color: white !important;
 }
 
-#wrap .s_website_form_rows .s_website_form_input::placeholder {
+#wrap .s_text_block .s_website_form_rows .s_website_form_input::placeholder {
     color: #9ca3af !important;
 }
 
-#wrap .s_website_form_rows .s_website_form_input:focus {
+#wrap .s_text_block .s_website_form_rows .s_website_form_input:focus {
     background: rgba(255, 255, 255, 0.15) !important;
     border-color: #7B3FF2 !important;
     box-shadow: none !important;
     color: white !important;
 }
 
-/* Textarea specific styling */
-#wrap .s_website_form_rows textarea.s_website_form_input {
+/* Textarea specific styling - Only for contact page */
+#wrap .s_text_block .s_website_form_rows textarea.s_website_form_input {
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid #374151 !important;
     color: white !important;
     resize: vertical;
 }
 
-/* Contact Form Submit Button Hover */
-#wrap .s_website_form_send:hover {
+/* Contact Form Submit Button Hover - Only for contact page */
+#wrap .s_text_block .s_website_form_send:hover {
     filter: none;
 }
-
-
-
-
-
-
-
 
 /* Company Contact Info Styling - Specific to contact page company info */
 #wrap .s_text_block .o_colored_level h5 {
@@ -59,29 +52,24 @@
     color: #e5e7eb !important;
 }
 
-
-
-
-
-
-/* Social Media Icons Hover Effect */
-#wrap .s_social_media a {
+/* Social Media Icons Hover Effect - Only for contact page */
+#wrap .s_text_block .s_social_media a {
     transition: all 0.3s ease !important;
 }
 
-#wrap .s_social_media a:hover {
+#wrap .s_text_block .s_social_media a:hover {
     transform: translateY(-3px) !important;
     text-decoration: none;
 }
 
-#wrap .s_social_media_facebook:hover i {
+#wrap .s_text_block .s_social_media_facebook:hover i {
     color: #1877F2 !important;
 }
 
-#wrap .s_social_media_instagram:hover i {
+#wrap .s_text_block .s_social_media_instagram:hover i {
     color: #ff00dd !important;
 }
 
-#wrap .s_social_media_youtube:hover i {
+#wrap .s_text_block .s_social_media_youtube:hover i {
     color: #FF0000 !important;
 }
