@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Display job description and dynamic skills after the job title section -->
-    <template id="dynamic_job_skills" inherit_id="website_hr_recruitment.detail">
-        <xpath expr="//section[@class='pb32']//div[@class='container']" position="after">
+    <template id="custom_job_detail" inherit_id="website_hr_recruitment.detail">
+        <!-- Target the actual website_description field directly -->
+        <xpath expr="//div[@t-field='job.website_description']" position="replace">
+            <!-- Replace the demo content with our custom skills and description -->
             <div class="container">
                 
                 <!-- First Row: Job Description and Job Details Sidebar -->
