@@ -121,25 +121,20 @@
                                 </span>
                             </p>
                             <h3 style="text-align: center;">Your Path to Academic Excellence</h3>
-                            <p class="lead" style="text-align: center;">Quality education backed by proven academic success.</p>
+                            <p class="lead" style="text-align: center;">Quality education backed by proven academic success</p>
                         </div>
-                        <div class="o_colored_level o_grid_item g-col-lg-3 rounded g-height-5 col-lg-3 o_cc o_cc4 order-lg-0" style="z-index: 3; grid-area: 5 / 4 / 10 / 7; --grid-item-padding-x: 20px; --grid-item-padding-y: 20px; border-radius: 10px !important; order: 2;">
-                            <i class="fa fa-rocket s_features_icon mb-3 rounded mx-auto d-block text-o-color-4" role="img" style="background-color: rgb(156, 0, 255);"/>
-                            <div class="overflow-hidden">
-                                <h3 class="h5-fs" style="text-align: center;">
-                                    <font class="text-black">Performance</font>
-                                </h3>
-                                <p style="text-align: center;">
-                                    <font class="text-black">Boost your results with exam-focused prep — structured to help you reach and go beyond the average.</font>
-                                    <br/>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 2; --grid-item-padding-x: 20px; grid-area: 5 / 1 / 10 / 4; --grid-item-padding-y: 20px; order: 1;">
+                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 1 / 10 / 4; --grid-item-padding-y: 20px; order: 1;">
                             <i class="fa fa-group s_features_icon mb-3 mx-auto d-block text-o-color-4 rounded" role="img" style="background-color: rgb(0, 146, 214);"/>
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">Peers</h3>
                                 <p style="text-align: center;">Learn directly from students who already aced these courses — we know exactly what professors want.</p>
+                            </div>
+                        </div>
+                        <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 4 / 10 / 7; --grid-item-padding-y: 20px; order: 2;">
+                            <i class="fa fa-rocket s_features_icon mb-3 rounded mx-auto d-block text-o-color-4" role="img" style="background-color: rgb(156, 0, 255);"/>
+                            <div class="overflow-hidden">
+                                <h3 class="h5-fs" style="text-align: center;">Performance</h3>
+                                <p style="text-align: center;">Boost your results with exam-focused prep — structured to help you reach and go beyond the average.</p>
                             </div>
                         </div>
                         <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 7 / 10 / 10; --grid-item-padding-y: 20px; order: 3;">
@@ -147,16 +142,13 @@
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">Value</h3>
                                 <p style="text-align: center;">High-quality education at symbolic prices — affordable for every student.</p>
-                                <p/>
                             </div>
                         </div>
                         <div class="o_colored_level o_grid_item g-height-5 g-col-lg-3 col-lg-3 order-lg-0" style="z-index: 4; --grid-item-padding-x: 20px; grid-area: 5 / 10 / 10 / 13; --grid-item-padding-y: 20px; order: 4;">
                             <i class="fa fa-comments s_features_icon mb-3 mx-auto d-block text-o-color-4 rounded bg-o-color-2" role="img"/>
                             <div class="overflow-hidden">
                                 <h3 class="h5-fs" style="text-align: center;">Clarity</h3>
-                                <p style="text-align: center;">Lessons explained in Derja
-                                    <strong>&amp;nbsp;</strong>(Arabic)— clear, relatable, and in the language you truly understand.
-                                </p>
+                                <p style="text-align: center;">Lessons explained in Derja (Arabic)— clear, relatable, and in the language you truly understand.</p>
                             </div>
                         </div>
                     </div>
